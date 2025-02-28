@@ -24,7 +24,11 @@ To see allowable values for `task`, refer to [huggingface.co/tasks](https://hugg
 
 ## Updating model mappings
 
-To fetch Replicate model statuses and post updates to the Hugging Face model mappings API:
+This repo uses a [GitHub Actions workflow](.github/workflows/sync.yml) to keep the model mappings up to date, as well as model warm/cold states.
+
+The workflow runs on a schedule and is triggered on every push to the main branch, so **you probably don't need to do anything!**.
+
+But if you need to run the sync manually, here's how:
 
 1. Make sure your user is a member of the [replicate organization](https://huggingface.co/organizations/replicate) on Hugging Face.
 1. Create a [Hugging Face token](https://huggingface.co/settings/tokens/new?tokenType=fineGrained). It doesn't need to have any specific permissions.

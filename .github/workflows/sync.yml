@@ -1,0 +1,29 @@
+name: Sync Model Mappings
+
+on:
+  schedule:
+    - cron: '0 * * * *'  # Run every hour
+  push:
+    branches:
+      - main
+  workflow_dispatch:  # Allows manual triggering
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Sync mappings
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: npm start
+
