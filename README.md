@@ -1,10 +1,12 @@
 # Hugging Face Model Mappings
 
-This repo contains a [mapping](src/models.ts) of Replicate models to Hugging Face models, for use with the [Inference Providers](https://huggingface.co/blog/inference-providers) feature on Hugging Face.
+In January 2025, Hugging Face announced [Inference Providers](https://huggingface.co/blog/inference-providers), a new feature that allows you to run models on Replicate (and other providers) right from the Hugging Face website.
 
-It also includes tooling to keep those mappings up to date using Hugging Face's API.
+## What is this repo?
 
-![screenshot](https://github.com/user-attachments/assets/5c742c5c-b8dd-4830-9a83-e05f5c9402c8)
+This repo contains a [mapping](src/models.ts) of Replicate models to Hugging Face models, so we can tell Hugging Face when to display a Replicate inference widget on its model pages.
+
+This repo also includes tooling to keep those mappings up to date using Hugging Face's Model Mappings API.
 
 ## Adding a new model
 
