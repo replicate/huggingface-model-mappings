@@ -1,1 +1,16 @@
-{"scripts":{"start":"ts-node src/index.ts","build":"tsc"}}
+{
+  "name": "huggingface-inference-updater",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "tsx src/index.ts"
+  },
+  "dependencies": {
+    "typescript": "^5.4.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.24",
+    "tsx": "^4.19.3"
+  }
+}
