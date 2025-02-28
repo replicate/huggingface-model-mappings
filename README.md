@@ -1,4 +1,4 @@
-# Hugging Face Model Mappings
+# Hugging Face Model Mappings 🤗
 
 In January 2025, Hugging Face announced [Inference Providers](https://huggingface.co/blog/inference-providers), a new feature that allows you to run models on Replicate (and other providers) right from the Hugging Face website.
 
