@@ -21,10 +21,10 @@ const getModelStatus = async (model: InferenceModel) => {
 // Get Replicate model warm/cold statuses in parallel
 const statuses = await Promise.all(inferenceModels.map(getModelStatus));
 
-// Add status to each model object
+// Set status (unless it's already manually defined on the model object)
 const replicateModels = inferenceModels.map((model, index) => ({
     ...model,
-    status: statuses[index],
+    status: model.status ?? statuses[index],
 }));
 
 console.log("\n\nReplicate model mappings:");
