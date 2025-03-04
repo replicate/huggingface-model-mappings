@@ -65,5 +65,9 @@ export const inferenceModels: InferenceModel[] = [
         hfModel: "genmo/mochi-1-preview",
         providerModel: "genmoai/mochi-1:1944af04d098ef69bed7f9d335d102e652203f268ec4aaa2d836f6217217e460",
         task: "text-to-video",
-    }
+    }, {
+        hfModel: "Wan-AI/Wan2.1-T2V-14B",
+        providerModel: "wavespeedai/wan-2.1-t2v-480p",
+        task: "text-to-video",
+    },
 ];
