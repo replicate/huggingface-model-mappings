@@ -2,6 +2,9 @@ export interface InferenceModel {
     hfModel: string;
     providerModel: string;
     task: string;
+
+    // You can set this to force the value, e.g. to keep a model as 'staging' even if it's
+    // warm/live on Replicate. If not set, the status will be inferred from the provider model
     status?: 'live' | 'staging';
 }
 
