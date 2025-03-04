@@ -13,6 +13,7 @@ export const inferenceModels: InferenceModel[] = [
         hfModel: "deepseek-ai/DeepSeek-R1",
         providerModel: "deepseek-ai/deepseek-r1",
         task: "conversational",
+        status: "staging",
     },
     {
         hfModel: "black-forest-labs/FLUX.1-dev",
