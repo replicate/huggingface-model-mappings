@@ -10,7 +10,9 @@ This repo also includes tooling to keep those mappings up to date using Hugging 
 
 ## Adding a new model
 
-To add a new model mapping, edit the `src/models.ts` file and add the new model to the `inferenceModels` array, like so:
+To add a new model mapping, edit [src/models.ts](src/models.ts) 
+
+Add your new model to the `inferenceModels` array, like so:
 
 ```typescript
 {
