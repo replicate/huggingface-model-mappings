@@ -71,19 +71,24 @@ export const inferenceModels: InferenceModel[] = [
         providerModel: "wavespeedai/wan-2.1-t2v-480p",
         task: "text-to-video",
     },
-    {
-        hfModel: "Wan-AI/Wan2.1-I2V-14B-480P",
-        providerModel: "wavespeedai/wan-2.1-i2v-480p",
-        task: "image-to-video",
-    },
-    {
-        hfModel: "Wan-AI/Wan2.1-I2V-14B-720P",
-        providerModel: "wavespeedai/wan-2.1-i2v-720p",
-        task: "image-to-video",
-    },
+    // {
+    //     hfModel: "Wan-AI/Wan2.1-I2V-14B-480P",
+    //     providerModel: "wavespeedai/wan-2.1-i2v-480p",
+    //     task: "image-to-video",
+    // },
+    // {
+    //     hfModel: "Wan-AI/Wan2.1-I2V-14B-720P",
+    //     providerModel: "wavespeedai/wan-2.1-i2v-720p",
+    //     task: "image-to-video",
+    // },
     {
         hfModel: "Wan-AI/Wan2.1-T2V-1.3B",
         providerModel: "wan-video/wan-2.1-1.3b",
+        task: "text-to-video",
+    },
+    {
+        hfModel: "Lightricks/LTX-Video",
+        providerModel: "lightricks/ltx-video:8c47da666861d081eeb4d1261853087de23923a268a69b63febdf5dc1dee08e4",
         task: "text-to-video",
     },
 ];
