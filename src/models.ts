@@ -90,9 +90,9 @@ export const inferenceModels: InferenceModel[] = [
         providerModel: "wan-video/wan-2.1-1.3b",
         task: "text-to-video",
     },
-    // {
-    //     hfModel: "Lightricks/LTX-Video",
-    //     providerModel: "lightricks/ltx-video:8c47da666861d081eeb4d1261853087de23923a268a69b63febdf5dc1dee08e4",
-    //     task: "image-to-video",
-    // },
+    {
+        hfModel: "Lightricks/LTX-Video",
+        providerModel: "lightricks/ltx-video:8c47da666861d081eeb4d1261853087de23923a268a69b63febdf5dc1dee08e4",
+        task: "text-to-video",
+    },
 ];
