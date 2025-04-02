@@ -61,6 +61,11 @@ export const inferenceModels: InferenceModel[] = [
         task: "text-to-image",
     },
     {
+        hfModel: "Efficient-Large-Model/Sana_Sprint_1.6B_1024px_diffusers",
+        providerModel: "nvidia/sana-sprint-1.6b",
+        task: "text-to-image",
+    },
+    {
         hfModel: "OuteAI/OuteTTS-0.3-500M",
         providerModel: "jbilcke/oute-tts:39a59319327b27327fa3095149c5a746e7f2aee18c75055c3368237a6503cd26",
         task: "text-to-speech",
