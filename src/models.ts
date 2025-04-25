@@ -100,4 +100,9 @@ export const inferenceModels: InferenceModel[] = [
         providerModel: "lightricks/ltx-video:8c47da666861d081eeb4d1261853087de23923a268a69b63febdf5dc1dee08e4",
         task: "text-to-video",
     },
+    {
+        hfModel: "zeke/rider-waite-tarot-flux",
+        providerModel: "tarot-cards/rider-waite:6d77a07ef88e8a09389385cb14d98b12629a4b23b0537b01dfeb833c32827546",
+        task: "text-to-image",
+    },
 ];
