@@ -1,9 +1,20 @@
-interface MappingItem {
+interface ModelMappingItem {
   task: string;
   hfModel: string;
   providerModel: string;
   status?: 'live' | 'staging';
 }
+
+interface TagFilterMappingItem {
+  task: string;
+  providerModel: string;
+  status?: 'live' | 'staging';
+  type: 'tag-filter';
+  tags: string[];
+  adapterType: 'lora';
+}
+
+type MappingItem = ModelMappingItem | TagFilterMappingItem;
 
 interface StatusUpdateRequest {
   hfModel: string;
@@ -43,12 +54,18 @@ class HFInferenceProviderClient {
 
       if (!response.ok) {
         const errorText = await response.text();
-        throw new Error(`Request failed: ${response.status} ${response.statusText} - ${errorText}`);
+        const error = new Error(`Request failed: ${response.status} ${response.statusText} - ${errorText}`);
+        if (response.status !== 409) {
+          console.error('Request error:', error);
+        }
+        throw error;
       }
 
       return await response.json();
     } catch (error) {
-      console.error('Request error:', error);
+      if (error instanceof Error && !error.message.includes('409 Conflict')) {
+        console.error('Request error:', error);
+      }
       throw error;
     }
   }

@@ -6,7 +6,7 @@ In January 2025, Hugging Face announced [Inference Providers](https://huggingfac
 
 This repo contains a [mapping](src/models.ts) of Replicate models to Hugging Face models, so we can tell Hugging Face when to display a Replicate inference widget on its model pages.
 
-This repo also includes tooling to keep those mappings up to date using Hugging Face's Model Mappings API.
+This repo also includes tooling to keep those mappings up to date using Hugging Face's [Model Mappings API](https://huggingface.co/docs/inference-providers/register-as-a-provider#3-model-mapping-api).
 
 ## Adding a new model
 
@@ -23,6 +23,25 @@ Add your new model to the `inferenceModels` array, like so:
 ```
 
 To see allowable values for `task`, refer to [huggingface.co/tasks](https://huggingface.co/tasks).
+
+## Adding a new tag mapping
+
+To add a new tag mapping, edit [src/tags.ts](src/tags.ts)
+
+Add your new tag to the `inferenceTags` array, like so:
+
+```typescript
+{
+    type: 'tag-filter',
+    task: 'text-to-image',
+    tags: ['flux', 'lora'],
+    providerModel: 'black-forest-labs/flux-dev-lora',
+    adapterType: 'lora',
+    status: 'live',
+}
+```
+
+Tag mappings allow you to map multiple Hugging Face models to a single Replicate model based on their tags. This is useful when you have a single Replicate model that can handle multiple variations of a model (like different LoRA adapters).
 
 ## Updating model mappings
 
