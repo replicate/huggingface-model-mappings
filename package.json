@@ -4,9 +4,12 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "start": "tsx src/index.ts"
+    "start": "tsx src/index.ts",
+    "list-providers": "tsx script/list-providers.ts",
+    "list-provider-mappings": "tsx script/list-provider-mappings.ts"
   },
   "dependencies": {
+    "@huggingface/inference": "^2.6.4",
     "typescript": "^5.4.2"
   },
   "devDependencies": {
