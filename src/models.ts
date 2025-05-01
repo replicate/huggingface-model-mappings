@@ -105,4 +105,9 @@ export const inferenceModels: InferenceModel[] = [
         providerModel: "tarot-cards/rider-waite:6d77a07ef88e8a09389385cb14d98b12629a4b23b0537b01dfeb833c32827546",
         task: "text-to-image",
     },
+    {
+        hfModel: "stepfun-ai/Step1X-Edit",
+        providerModel: "zsxkib/step1x-edit",
+        task: "image-to-image",
+    },
 ];
