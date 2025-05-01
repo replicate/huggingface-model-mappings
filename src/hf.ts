@@ -1,12 +1,20 @@
-interface MappingItem {
+interface ModelMappingItem {
   task: string;
-  hfModel?: string;
+  hfModel: string;
   providerModel: string;
   status?: 'live' | 'staging';
-  type?: 'tag-filter';
-  tags?: string[];
-  adapterType?: 'lora';
 }
+
+interface TagFilterMappingItem {
+  task: string;
+  providerModel: string;
+  status?: 'live' | 'staging';
+  type: 'tag-filter';
+  tags: string[];
+  adapterType: 'lora';
+}
+
+type MappingItem = ModelMappingItem | TagFilterMappingItem;
 
 interface StatusUpdateRequest {
   hfModel: string;
