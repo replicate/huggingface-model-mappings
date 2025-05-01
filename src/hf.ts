@@ -1,8 +1,11 @@
 interface MappingItem {
   task: string;
-  hfModel: string;
+  hfModel?: string;
   providerModel: string;
   status?: 'live' | 'staging';
+  type?: 'tag-filter';
+  tags?: string[];
+  adapterType?: 'lora';
 }
 
 interface StatusUpdateRequest {

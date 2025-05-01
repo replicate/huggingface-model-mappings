@@ -1,4 +1,5 @@
 import { type InferenceModel, inferenceModels } from './models.js';
+import { type InferenceTag, inferenceTags } from './tags.js';
 
 import HFInferenceProviderClient from './hf.js';
 
@@ -37,7 +38,6 @@ console.log("\n\nExisting HF model IDs:");
 console.log(existingHFModelIds);
 
 const newMappings = replicateModels.filter(model => !existingHFModelIds.includes(model.hfModel));
-
 const existingMappings = replicateModels.filter(model => existingHFModelIds.includes(model.hfModel));
 
 if (newMappings.length > 0) {
@@ -61,6 +61,21 @@ if (existingMappings.length > 0) {
     }
 } else {
 	console.log("\n\nNo existing mappings to update.");
+}
+
+// Handle tag mappings
+console.log("\n\nReplicate tag mappings:");
+console.log(inferenceTags);
+
+// Register tag mappings
+if (inferenceTags.length > 0) {
+    console.log("\n\nAdding tag mappings:");
+    for (const tag of inferenceTags) {
+        console.log(`${tag.tags.join(', ')} - ${tag.status ?? 'live'}`);
+        await hf.registerMappingItem(tag);
+    }
+} else {
+    console.log("\n\nNo tag mappings to add.");
 }
 
 console.log("\n\nDone!");
