@@ -62,3 +62,52 @@ But if you need to run the sync manually, here's how:
     npm install
     npm start
     ```
+
+## Listing Provider Mappings
+
+This repo includes scripts to list available providers and their model mappings.
+
+### List Available Providers
+
+To see all available inference providers:
+
+```bash
+npm run list-providers
+```
+
+This will output a JSON array of provider IDs, like:
+```json
+[
+  "cerebras",
+  "cohere",
+  "fal-ai",
+  "fireworks",
+  "hyperbolic",
+  "hf-inference",
+  "nebius",
+  "novita",
+  "replicate",
+  "sambanova",
+  "together"
+]
+```
+
+### List Provider Mappings
+
+To see the model mappings for a specific provider:
+
+```bash
+npm run list-provider-mappings -- <provider-id>
+```
+
+For example, to see Replicate's mappings:
+```bash
+npm run list-provider-mappings -- replicate
+```
+
+This will output a JSON object containing all model mappings for the specified provider, organized by task type.
+
+Note: You'll need to set the `HF_TOKEN` environment variable to use these scripts:
+```bash
+export HF_TOKEN=<your-huggingface-token>
+```

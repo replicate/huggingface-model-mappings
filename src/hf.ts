@@ -117,18 +117,17 @@ class HFInferenceProviderClient {
 
   async listMappingIds(): Promise<string[]> {
     const mappings = await this.listMappingItems();
-
-    const ids = [];
-
-    for (const [_taskType, models] of Object.entries(mappings)) {
-        for (const [modelId, _model] of Object.entries(models)) {
-            ids.push(modelId);
-        }
-    }
-    
-    return ids;
+    return Object.values(mappings).flatMap(taskMappings => 
+      Object.keys(taskMappings)
+    );
   }
 
+  async getMappingsByProvider(provider: string): Promise<Record<string, Record<string, MappingItem>>> {
+    const url = `${this.baseUrl}/api/partners/${provider}/models`;
+    return this.request<Record<string, Record<string, MappingItem>>>(url, {
+      method: 'GET'
+    });
+  }
 }
 
 export default HFInferenceProviderClient;
