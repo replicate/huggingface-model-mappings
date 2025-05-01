@@ -72,7 +72,15 @@ if (inferenceTags.length > 0) {
     console.log("\n\nAdding tag mappings:");
     for (const tag of inferenceTags) {
         console.log(`${tag.tags.join(', ')} - ${tag.status ?? 'live'}`);
-        await hf.registerMappingItem(tag);
+        try {
+            await hf.registerMappingItem(tag);
+        } catch (error) {
+            if (error instanceof Error && error.message.includes('409 Conflict')) {
+                console.log(`Skipping existing mapping for tags: ${tag.tags.join(', ')}`);
+                continue;
+            }
+            throw error;
+        }
     }
 } else {
     console.log("\n\nNo tag mappings to add.");
