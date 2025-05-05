@@ -6,7 +6,8 @@
   "scripts": {
     "start": "tsx src/index.ts",
     "list-providers": "tsx script/list-providers.ts",
-    "list-provider-mappings": "tsx script/list-provider-mappings.ts"
+    "list-provider-mappings": "tsx script/list-provider-mappings.ts",
+    "delete-mapping": "tsx script/delete-mapping.ts"
   },
   "dependencies": {
     "@huggingface/inference": "^2.6.4",
