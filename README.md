@@ -107,6 +107,21 @@ npm run list-provider-mappings -- replicate
 
 This will output a JSON object containing all model mappings for the specified provider, organized by task type.
 
+### Delete a Mapping
+
+To delete a specific model mapping:
+
+```bash
+npm run delete-mapping -- <mapping-id>
+```
+
+For example:
+```bash
+npm run delete-mapping -- "namespace/model-name"
+```
+
+This will permanently delete the specified mapping from Hugging Face. Use with caution!
+
 Note: You'll need to set the `HF_TOKEN` environment variable to use these scripts:
 ```bash
 export HF_TOKEN=<your-huggingface-token>
