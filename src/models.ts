@@ -109,5 +109,6 @@ export const inferenceModels: InferenceModel[] = [
         hfModel: "stepfun-ai/Step1X-Edit",
         providerModel: "zsxkib/step1x-edit",
         task: "image-to-image",
+        status: "staging",
     },
 ];
