@@ -5,6 +5,7 @@ import HFInferenceProviderClient from './hf.js';
 
 const hf = new HFInferenceProviderClient({provider: 'replicate'});
 
+// Hit the Replicate API to get the warm/cold status for the given model
 const getModelStatus = async (model: InferenceModel) => {
 	try {
 		const [modelName, _modelVersion] = model.providerModel.split(":");
@@ -19,13 +20,25 @@ const getModelStatus = async (model: InferenceModel) => {
 	}
 };
 
-// Get Replicate model warm/cold statuses in parallel
-const statuses = await Promise.all(inferenceModels.map(getModelStatus));
+// Hit the Hugging Face API to get the Task™ type for the given model,
+// e.g. "text-to-image", "image-to-image", "text-to-video", etc.
+const getModelTask = async (model: InferenceModel) => {
+	const response = await fetch(`https://huggingface.co/api/models/${model.hfModel}`);
+	const data = await response.json() as { pipeline_tag: string };
+	return data.pipeline_tag;
+};
 
-// Set status (unless it's already manually defined on the model object)
+// Get Replicate model warm/cold statuses and Hugging Face tasks in parallel
+const [statuses, tasks] = await Promise.all([
+	Promise.all(inferenceModels.map(getModelStatus)),
+	Promise.all(inferenceModels.map(getModelTask))
+]);
+
+// Set status and task (unless they're already manually defined on the model object)
 const replicateModels = inferenceModels.map((model, index) => ({
     ...model,
     status: model.status ?? statuses[index],
+    task: model.task ?? tasks[index],
 }));
 
 console.log("\n\nReplicate model mappings:");
