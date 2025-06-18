@@ -5,6 +5,30 @@ import HFInferenceProviderClient from './hf.js';
 
 const hf = new HFInferenceProviderClient({provider: 'replicate'});
 
+// Only some tasks are supported by HF's Inference Providers API
+const supportedTasks = [
+    'audio-text-to-text',
+    'automatic-speech-recognition',
+    'conversational',
+    'feature-extraction',
+    'fill-mask',
+    'image-classification',
+    'image-segmentation',
+    'image-to-image',
+    'object-detection',
+    'question-answering',
+    'summarization',
+    'table-question-answering',
+    'text-classification',
+    'text-generation',
+    'text-to-image',
+    'text-to-speech',
+    'text-to-video',
+    'token-classification',
+    'translation',
+    'zero-shot-classification',
+];
+
 // Hit the Replicate API to get the warm/cold status for the given model
 const getModelStatus = async (model: InferenceModel) => {
 	try {
@@ -44,14 +68,25 @@ const replicateModels = inferenceModels.map((model, index) => ({
 console.log("\n\nReplicate model mappings:");
 console.log(replicateModels);
 
-// Get all mappings from Hugging Face
+// Filter out models with unsupported task types before registering them
+const unsupportedModels = replicateModels.filter(model => !supportedTasks.includes(model.task ?? ''));
+const supportedModels = replicateModels.filter(model => supportedTasks.includes(model.task ?? ''));
+
+if (unsupportedModels.length > 0) {
+    console.log("\n\nDiscarding models with unsupported task types:");
+    for (const model of unsupportedModels) {
+        console.log(`${model.hfModel} - unsupported task: ${model.task}`);
+    }
+}
+
+// Use only supported models for mapping operations
 const existingHFModelIds = await hf.listMappingIds();
 
 console.log("\n\nExisting HF model IDs:");
 console.log(existingHFModelIds);
 
-const newMappings = replicateModels.filter(model => !existingHFModelIds.includes(model.hfModel));
-const existingMappings = replicateModels.filter(model => existingHFModelIds.includes(model.hfModel));
+const newMappings = supportedModels.filter(model => !existingHFModelIds.includes(model.hfModel));
+const existingMappings = supportedModels.filter(model => existingHFModelIds.includes(model.hfModel));
 
 if (newMappings.length > 0) {
 	console.log("\n\nAdding new mappings:");
