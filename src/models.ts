@@ -8,7 +8,7 @@ export interface InferenceModel {
     status?: 'live' | 'staging';
 }
 
-export const inferenceModels: InferenceModel[] = [
+const models: InferenceModel[] = [
     {
         hfModel: "deepseek-ai/DeepSeek-R1",
         providerModel: "deepseek-ai/deepseek-r1",
@@ -94,4 +94,11 @@ export const inferenceModels: InferenceModel[] = [
         providerModel: "zsxkib/step1x-edit",
         status: "staging"
     },
+];
+
+const { default: candidates } = await import('./candidates.json', { assert: { type: 'json' } });
+
+export const inferenceModels = [
+    ...models,
+    ...candidates
 ];
