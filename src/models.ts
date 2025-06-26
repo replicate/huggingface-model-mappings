@@ -94,4 +94,8 @@ export const inferenceModels: InferenceModel[] = [
         providerModel: "zsxkib/step1x-edit",
         status: "staging"
     },
+    {
+        hfModel: "black-forest-labs/FLUX.1-Kontext-dev",
+        providerModel: "black-forest-labs/flux-kontext-dev",
+    },
 ];
