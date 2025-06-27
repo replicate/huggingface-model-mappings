@@ -92,7 +92,6 @@ export const inferenceModels: InferenceModel[] = [
     {
         hfModel: "stepfun-ai/Step1X-Edit",
         providerModel: "zsxkib/step1x-edit",
-        status: "staging"
     },
     {
         hfModel: "black-forest-labs/FLUX.1-Kontext-dev",
