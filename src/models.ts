@@ -97,4 +97,8 @@ export const inferenceModels: InferenceModel[] = [
         hfModel: "black-forest-labs/FLUX.1-Kontext-dev",
         providerModel: "black-forest-labs/flux-kontext-dev",
     },
+    {
+        hfModel: "ResembleAI/chatterbox",
+        providerModel: "resemble-ai/chatterbox",
+    },
 ];
