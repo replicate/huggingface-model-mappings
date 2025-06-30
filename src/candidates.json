@@ -1,0 +1,1262 @@
+[
+  {
+    "hfModel": "VAST-AI/TripoSG",
+    "providerModel": "aaronjmars/triposg"
+  },
+  {
+    "hfModel": "jasperai/Flux.1-dev-Controlnet-Upscaler",
+    "providerModel": "abdulali025/andro-upscaler"
+  },
+  {
+    "hfModel": "lshzhm/DeepAudio-V1",
+    "providerModel": "acappemin/deepaudio-v1"
+  },
+  {
+    "hfModel": "lshzhm/Video-to-Audio-and-Piano",
+    "providerModel": "acappemin/video-to-audio-and-piano"
+  },
+  {
+    "hfModel": "cagliostrolab/animagine-xl-4.0",
+    "providerModel": "aisha-ai-official/animagine-xl-4.0"
+  },
+  {
+    "hfModel": "cagliostrolab/animagine-xl-4.0",
+    "providerModel": "aisha-ai-official/animagine-xl-v4-opt"
+  },
+  {
+    "hfModel": "aleksa-codes/flux-ghibsky-illustration",
+    "providerModel": "aleksa-codes/flux-ghibsky-illustration"
+  },
+  {
+    "hfModel": "speakleash/Bielik-11B-v2.3-Instruct",
+    "providerModel": "aleksanderobuchowski/bielik-11b-v2.3-instruct"
+  },
+  {
+    "hfModel": "AlekseyCalvin/Akhmatova_Flux_LoRA_SilverAgePoets_v2_regularFluxD",
+    "providerModel": "alekseycalvin/anna_akhmatova_flux"
+  },
+  {
+    "hfModel": "hexgrad/Kokoro-82M",
+    "providerModel": "alphanumericuser/kokoro-82m"
+  },
+  {
+    "hfModel": "glif-loradex-trainer/an303042_ThenAndNow_v1",
+    "providerModel": "an303042/flux-then-and-now"
+  },
+  {
+    "hfModel": "black-forest-labs/FLUX.1-dev",
+    "providerModel": "andrebadini/flux-dev-lora"
+  },
+  {
+    "hfModel": "astelvida/pop-art",
+    "providerModel": "astelvida/pop-art"
+  },
+  {
+    "hfModel": "BAAI/Emu3-Chat",
+    "providerModel": "baaivision/emu3-chat"
+  },
+  {
+    "hfModel": "BAAI/Emu3-Gen",
+    "providerModel": "baaivision/emu3-gen"
+  },
+  {
+    "hfModel": "MoboCreeze/Yogagirl",
+    "providerModel": "bigrj100/yogagirl"
+  },
+  {
+    "hfModel": "bingbangboom/flux-waterscape",
+    "providerModel": "bingbangboom-lab/flux-waterscape"
+  },
+  {
+    "hfModel": "black-forest-labs/FLUX.1-Canny-dev",
+    "providerModel": "black-forest-labs/flux-canny-dev"
+  },
+  {
+    "hfModel": "black-forest-labs/FLUX.1-Depth-dev",
+    "providerModel": "black-forest-labs/flux-depth-dev"
+  },
+  {
+    "hfModel": "black-forest-labs/FLUX.1-dev",
+    "providerModel": "black-forest-labs/flux-dev"
+  },
+  {
+    "hfModel": "black-forest-labs/FLUX.1-dev",
+    "providerModel": "black-forest-labs/flux-dev-lora"
+  },
+  {
+    "hfModel": "black-forest-labs/FLUX.1-Fill-dev",
+    "providerModel": "black-forest-labs/flux-fill-dev"
+  },
+  {
+    "hfModel": "black-forest-labs",
+    "providerModel": "black-forest-labs/flux-kontext-max"
+  },
+  {
+    "hfModel": "black-forest-labs",
+    "providerModel": "black-forest-labs/flux-kontext-pro"
+  },
+  {
+    "hfModel": "black-forest-labs/FLUX.1-Redux-dev",
+    "providerModel": "black-forest-labs/flux-redux-dev"
+  },
+  {
+    "hfModel": "black-forest-labs/FLUX.1-schnell",
+    "providerModel": "black-forest-labs/flux-schnell"
+  },
+  {
+    "hfModel": "black-forest-labs/FLUX.1-schnell",
+    "providerModel": "black-forest-labs/flux-schnell-lora"
+  },
+  {
+    "hfModel": "blackytombeat/Tom",
+    "providerModel": "blackytom/cybotom"
+  },
+  {
+    "hfModel": "ByteDance-Seed/BAGEL-7B-MoT",
+    "providerModel": "bytedance/bagel"
+  },
+  {
+    "hfModel": "ByteDance/Hyper-SD",
+    "providerModel": "bytedance/hyper-flux-16step"
+  },
+  {
+    "hfModel": "ByteDance/Hyper-SD",
+    "providerModel": "bytedance/hyper-flux-8step"
+  },
+  {
+    "hfModel": "chunyu-li/LatentSync",
+    "providerModel": "bytedance/latentsync"
+  },
+  {
+    "hfModel": "ByteDance/Sa2VA-26B",
+    "providerModel": "bytedance/sa2va-26b-image"
+  },
+  {
+    "hfModel": "ByteDance/Sa2VA-26B",
+    "providerModel": "bytedance/sa2va-26b-video"
+  },
+  {
+    "hfModel": "ByteDance/Sa2VA-4B",
+    "providerModel": "bytedance/sa2va-4b-image"
+  },
+  {
+    "hfModel": "ByteDance/Sa2VA-4B",
+    "providerModel": "bytedance/sa2va-4b-video"
+  },
+  {
+    "hfModel": "ByteDance/Sa2VA-8B",
+    "providerModel": "bytedance/sa2va-8b-image"
+  },
+  {
+    "hfModel": "ByteDance/Sa2VA-8B",
+    "providerModel": "bytedance/sa2va-8b-video"
+  },
+  {
+    "hfModel": "ByteDance/SDXL-Lightning",
+    "providerModel": "bytedance/sdxl-lightning-4step"
+  },
+  {
+    "hfModel": "coqui/XTTS-v2",
+    "providerModel": "bzikst/xtts-v2-fork"
+  },
+  {
+    "hfModel": "cale/greeting-card-generator-flux",
+    "providerModel": "cfbach/greeting-card-generator-flux"
+  },
+  {
+    "hfModel": "cale/kft-hla-flux",
+    "providerModel": "cfbach/kft-hla-flux"
+  },
+  {
+    "hfModel": "THUDM/CogView3-Plus-3B",
+    "providerModel": "chenxwh/cogview3"
+  },
+  {
+    "hfModel": "THUDM/cogvlm2-llama3-chat-19B",
+    "providerModel": "chenxwh/cogvlm2"
+  },
+  {
+    "hfModel": "THUDM/cogvlm2-video-llama3-chat",
+    "providerModel": "chenxwh/cogvlm2-video"
+  },
+  {
+    "hfModel": "deepseek-ai/deepseek-vl2-small",
+    "providerModel": "chenxwh/deepseek-vl2"
+  },
+  {
+    "hfModel": "tencent/DepthCrafter",
+    "providerModel": "chenxwh/depthcrafter"
+  },
+  {
+    "hfModel": "jingheya/lotus-depth-g-v1-0",
+    "providerModel": "chenxwh/lotus"
+  },
+  {
+    "hfModel": "Lightricks/LTX-Video",
+    "providerModel": "chenxwh/ltx-video"
+  },
+  {
+    "hfModel": "ChenDY/NitroFusion",
+    "providerModel": "chenxwh/nitrofusion"
+  },
+  {
+    "hfModel": "BAAI/nova-d48w1536-sdxl1024",
+    "providerModel": "chenxwh/nova-t2i"
+  },
+  {
+    "hfModel": "BAAI/nova-d48w1024-osp480",
+    "providerModel": "chenxwh/nova-t2v"
+  },
+  {
+    "hfModel": "Yuanshi/OminiControl",
+    "providerModel": "chenxwh/ominicontrol-spatial"
+  },
+  {
+    "hfModel": "Yuanshi/OminiControl",
+    "providerModel": "chenxwh/ominicontrol-subject"
+  },
+  {
+    "hfModel": "lehduong/OneDiffusion",
+    "providerModel": "chenxwh/onediffusion"
+  },
+  {
+    "hfModel": "chicoi/kukuuniform",
+    "providerModel": "chicoi08/kukuuniform"
+  },
+  {
+    "hfModel": "Zyphra/Zonos-v0.1-hybrid",
+    "providerModel": "cuuupid/mel-medarda-tts"
+  },
+  {
+    "hfModel": "Zyphra/Zonos-v0.1-hybrid",
+    "providerModel": "cuuupid/zonos"
+  },
+  {
+    "hfModel": "jasperai/Flux.1-dev-Controlnet-Upscaler",
+    "providerModel": "d3vshoaib/andro-upscaler"
+  },
+  {
+    "hfModel": "black-forest-labs/FLUX.1-Fill-dev",
+    "providerModel": "daanelson/flux-fill-dev-big"
+  },
+  {
+    "hfModel": "Corcelio/mobius",
+    "providerModel": "datacte/mobius"
+  },
+  {
+    "hfModel": "dataautogpt3/ProteusV0.3",
+    "providerModel": "datacte/proteus-v0.3"
+  },
+  {
+    "hfModel": "Deanm1993/mrdm-ostris",
+    "providerModel": "deanm1993/mrdm-ostris"
+  },
+  {
+    "hfModel": "declare-lab/TangoFlux",
+    "providerModel": "declare-lab/tangoflux"
+  },
+  {
+    "hfModel": "deepseek-ai/DeepSeek-R1",
+    "providerModel": "deepseek-ai/deepseek-r1"
+  },
+  {
+    "hfModel": "deepseek-ai/DeepSeek-V3-0324",
+    "providerModel": "deepseek-ai/deepseek-v3"
+  },
+  {
+    "hfModel": "deepseek-ai/deepseek-vl2",
+    "providerModel": "deepseek-ai/deepseek-vl2"
+  },
+  {
+    "hfModel": "deepseek-ai/deepseek-vl2-small",
+    "providerModel": "deepseek-ai/deepseek-vl2-small"
+  },
+  {
+    "hfModel": "deepseek-ai/Janus-Pro-1B",
+    "providerModel": "deepseek-ai/janus-pro-1b"
+  },
+  {
+    "hfModel": "deepseek-ai/Janus-Pro-7B",
+    "providerModel": "deepseek-ai/janus-pro-7b"
+  },
+  {
+    "hfModel": "v2ray/civitai-collection",
+    "providerModel": "delta-lock/noobai-xl"
+  },
+  {
+    "hfModel": "v2ray/civitai-collection",
+    "providerModel": "delta-lock/ponynai3"
+  },
+  {
+    "hfModel": "replicate/elimasuper",
+    "providerModel": "elimasuper/teacher"
+  },
+  {
+    "hfModel": "Falconsai/nsfw_image_detection",
+    "providerModel": "falcons-ai/nsfw_image_detection"
+  },
+  {
+    "hfModel": "alimama-creative/FLUX.1-dev-Controlnet-Inpainting-Beta",
+    "providerModel": "fishwowater/flux-dev-controlnet-inpainting-beta"
+  },
+  {
+    "hfModel": "JeffreyXiang/TRELLIS-image-large",
+    "providerModel": "fishwowater/trellis-image"
+  },
+  {
+    "hfModel": "KwaiVGI/LivePortrait",
+    "providerModel": "fofr/expression-editor"
+  },
+  {
+    "hfModel": "fofr/flux-condensation",
+    "providerModel": "fofr/flux-condensation"
+  },
+  {
+    "hfModel": "black-forest-labs/FLUX.1-dev",
+    "providerModel": "fofr/flux-dev-layers"
+  },
+  {
+    "hfModel": "fofr/flux-handwriting",
+    "providerModel": "fofr/flux-handwriting"
+  },
+  {
+    "hfModel": "fofr/flux-meta-orion",
+    "providerModel": "fofr/flux-meta-orion"
+  },
+  {
+    "hfModel": "fofr/flux-my-subconscious",
+    "providerModel": "fofr/flux-my-subconscious"
+  },
+  {
+    "hfModel": "fofr/flux-neo-impressionism",
+    "providerModel": "fofr/flux-neo-impressionism"
+  },
+  {
+    "hfModel": "fofr/flux-tesla-cybercab",
+    "providerModel": "fofr/flux-tesla-cybercab"
+  },
+  {
+    "hfModel": "fofr/flux-tesla-robovan",
+    "providerModel": "fofr/flux-tesla-robovan"
+  },
+  {
+    "hfModel": "fofr/flux-victorian-xmas-cards",
+    "providerModel": "fofr/flux-victorian-xmas-cards"
+  },
+  {
+    "hfModel": "fofr/hunyuan-cyberpunk-mod",
+    "providerModel": "fofr/hunyuan-cyberpunk-mod"
+  },
+  {
+    "hfModel": "fofr/wan-14b-laezel",
+    "providerModel": "fofr/wan-14b-laezel"
+  },
+  {
+    "hfModel": "m-a-p/YuE-s1-7B-anneal-en-cot",
+    "providerModel": "fofr/yue"
+  },
+  {
+    "hfModel": "FoundationVision/infinity",
+    "providerModel": "foundationvision/infinity"
+  },
+  {
+    "hfModel": "replicate/my-model",
+    "providerModel": "freddidd/dariia1"
+  },
+  {
+    "hfModel": "Freepik/flux.1-lite-8B-alpha",
+    "providerModel": "freepik-company/flux.1-lite-8b-alpha"
+  },
+  {
+    "hfModel": "tugan0329/flux-dev-otake",
+    "providerModel": "gan-tu/flux-otake-cartoon"
+  },
+  {
+    "hfModel": "tugan0329/flux-dev-priapus",
+    "providerModel": "gan-tu/flux-priapus-cartoon"
+  },
+  {
+    "hfModel": "gauravan/flux-tesla-optimus-robot-lora",
+    "providerModel": "gauravburande/flux-tesla-optimus-robot-lora"
+  },
+  {
+    "hfModel": "genmo/mochi-1-preview",
+    "providerModel": "genmoai/mochi-1"
+  },
+  {
+    "hfModel": "genmo/mochi-1-preview",
+    "providerModel": "genmoai/mochi-1-lora"
+  },
+  {
+    "hfModel": "genmo/mochi-1-preview",
+    "providerModel": "genmoai/mochi-1-lora-trainer"
+  },
+  {
+    "hfModel": "Lightricks/LTX-Video",
+    "providerModel": "georgedavila/cog-ltx-video"
+  },
+  {
+    "hfModel": "Christopol/moi",
+    "providerModel": "geradon/moi"
+  },
+  {
+    "hfModel": "canopylabs/3b-es_it-ft-research_release",
+    "providerModel": "gianpaj/cog-orpheus-3b-0.1-ft"
+  },
+  {
+    "hfModel": "hofixD/good-sdxl-models-plus-loras",
+    "providerModel": "goodguy1963/good-sdxl-models-plus-loras"
+  },
+  {
+    "hfModel": "hofixD/comfyui-hidream-l1-full-img2img",
+    "providerModel": "goodguy1963/hidream-l1-full-img2img"
+  },
+  {
+    "hfModel": "google/gemma-3-12b-it",
+    "providerModel": "google-deepmind/gemma-3-12b-it"
+  },
+  {
+    "hfModel": "google/gemma-3-27b-it",
+    "providerModel": "google-deepmind/gemma-3-27b-it"
+  },
+  {
+    "hfModel": "google/gemma-3-4b-it",
+    "providerModel": "google-deepmind/gemma-3-4b-it"
+  },
+  {
+    "hfModel": "google/shieldgemma-2-4b-it",
+    "providerModel": "google-deepmind/shieldgemma-2-4b-it"
+  },
+  {
+    "hfModel": "sayakpaul/FLUX.1-dev-edit-v0",
+    "providerModel": "hardikdava/flux-image-editing"
+  },
+  {
+    "hfModel": "instruction-tuning-sd/cartoonizer",
+    "providerModel": "harrolee/cartoonizer"
+  },
+  {
+    "hfModel": "ibm-granite/granite-3.0-2b-instruct",
+    "providerModel": "ibm-granite/granite-3.0-2b-instruct"
+  },
+  {
+    "hfModel": "ibm-granite/granite-3.0-8b-instruct",
+    "providerModel": "ibm-granite/granite-3.0-8b-instruct"
+  },
+  {
+    "hfModel": "ibm-granite/granite-3.3-8b-instruct",
+    "providerModel": "ibm-granite/granite-3.3-8b-instruct"
+  },
+  {
+    "hfModel": "ibm-granite/granite-embedding-278m-multilingual",
+    "providerModel": "ibm-granite/granite-embedding-278m-multilingual"
+  },
+  {
+    "hfModel": "ICTNLP/Llama-3.1-8B-Omni",
+    "providerModel": "ictnlp/llama-omni"
+  },
+  {
+    "hfModel": "igorriti/flux-360",
+    "providerModel": "igorriti/flux-360"
+  },
+  {
+    "hfModel": "iliketoasters/miniature-people",
+    "providerModel": "iliketoasters/flux-miniature-people"
+  },
+  {
+    "hfModel": "hexgrad/Kokoro-82M",
+    "providerModel": "jaaari/kokoro-82m"
+  },
+  {
+    "hfModel": "Zyphra/Zonos-v0.1-transformer",
+    "providerModel": "jaaari/zonos"
+  },
+  {
+    "hfModel": "jakedahn/flux-autumn-green",
+    "providerModel": "jakedahn/flux-autumn-green"
+  },
+  {
+    "hfModel": "jakedahn/flux-latentpop",
+    "providerModel": "jakedahn/flux-latentpop"
+  },
+  {
+    "hfModel": "OuteAI/OuteTTS-0.3-500M",
+    "providerModel": "jbilcke/oute-tts"
+  },
+  {
+    "hfModel": "fishaudio/fish-speech-1.5",
+    "providerModel": "jichengdu/fish-speech"
+  },
+  {
+    "hfModel": "black-forest-labs/FLUX.1-dev",
+    "providerModel": "jichengdu/flux"
+  },
+  {
+    "hfModel": "guozinan/PuLID",
+    "providerModel": "jichengdu/flux-pulid"
+  },
+  {
+    "hfModel": "Wan-AI/Wan2.1-I2V-14B-720P",
+    "providerModel": "jichengdu/wan-i2v"
+  },
+  {
+    "hfModel": "microsoft/Phi-3.5-vision-instruct",
+    "providerModel": "jimothyjohn/phi3-vision-instruct"
+  },
+  {
+    "hfModel": "ASLP-lab/DiffRhythm-base",
+    "providerModel": "jourdelune/diffrhythm"
+  },
+  {
+    "hfModel": "jinaai/reader-lm-1.5b",
+    "providerModel": "justmalhar/reader-lm"
+  },
+  {
+    "hfModel": "fal/AuraFlow",
+    "providerModel": "jyoung105/auraflow-v1"
+  },
+  {
+    "hfModel": "fal/AuraFlow-v0.2",
+    "providerModel": "jyoung105/auraflow-v2"
+  },
+  {
+    "hfModel": "fal/AuraFlow-v0.3",
+    "providerModel": "jyoung105/auraflow-v3"
+  },
+  {
+    "hfModel": "THUDM/CogView3-Plus-3B",
+    "providerModel": "jyoung105/cogview-v3-plus"
+  },
+  {
+    "hfModel": "tianweiy/DMD2",
+    "providerModel": "jyoung105/dmd2"
+  },
+  {
+    "hfModel": "jasperai/flash-sdxl",
+    "providerModel": "jyoung105/flash-sdxl"
+  },
+  {
+    "hfModel": "ByteDance/Hyper-SD",
+    "providerModel": "jyoung105/hyper-sdxl"
+  },
+  {
+    "hfModel": "Kwai-Kolors/Kolors-diffusers",
+    "providerModel": "jyoung105/kolors"
+  },
+  {
+    "hfModel": "SimianLuo/LCM_Dreamshaper_v7",
+    "providerModel": "jyoung105/lcm"
+  },
+  {
+    "hfModel": "ByteDance/SDXL-Lightning",
+    "providerModel": "jyoung105/lightning-sdxl"
+  },
+  {
+    "hfModel": "MeissonFlow/Meissonic",
+    "providerModel": "jyoung105/meissonic"
+  },
+  {
+    "hfModel": "wangfuyun/PCM_Weights",
+    "providerModel": "jyoung105/pcm"
+  },
+  {
+    "hfModel": "hansyan/perflow-sdxl-base",
+    "providerModel": "jyoung105/perflow"
+  },
+  {
+    "hfModel": "playgroundai/playground-v2-1024px-aesthetic",
+    "providerModel": "jyoung105/playground-v2"
+  },
+  {
+    "hfModel": "playgroundai/playground-v2.5-1024px-aesthetic",
+    "providerModel": "jyoung105/playground-v2.5"
+  },
+  {
+    "hfModel": "stabilityai/sdxl-turbo",
+    "providerModel": "jyoung105/sdxl-turbo"
+  },
+  {
+    "hfModel": "stabilityai/stable-cascade",
+    "providerModel": "jyoung105/stable-cascade"
+  },
+  {
+    "hfModel": "h1t/TCD-SDXL-LoRA",
+    "providerModel": "jyoung105/tcd-sdxl"
+  },
+  {
+    "hfModel": "FastVideo/FastHunyuan",
+    "providerModel": "jzhang38/fast-hunyuan-video"
+  },
+  {
+    "hfModel": "FastVideo/FastMochi-diffusers",
+    "providerModel": "jzhang38/fast-mochi"
+  },
+  {
+    "hfModel": "hexgrad/Kokoro-82M",
+    "providerModel": "kjjk10/kokoro-82m"
+  },
+  {
+    "hfModel": "HKUSTAudio/Llasa-3B",
+    "providerModel": "kjjk10/llasa-3b-long"
+  },
+  {
+    "hfModel": "jingheya/lotus-depth-d-v2-0-disparity",
+    "providerModel": "kjjk10/lotus-diffusion-dense-prediction"
+  },
+  {
+    "hfModel": "pyannote/speaker-diarization-3.1",
+    "providerModel": "konieshadow/speaker-diarization"
+  },
+  {
+    "hfModel": "Lightricks/LTX-Video",
+    "providerModel": "lightricks/ltx-video"
+  },
+  {
+    "hfModel": "Lightricks/LTX-Video",
+    "providerModel": "lightricks/ltx-video-0.9.7"
+  },
+  {
+    "hfModel": "ACE-Step/ACE-Step-v1-3.5B",
+    "providerModel": "lucataco/ace-step"
+  },
+  {
+    "hfModel": "black-forest-labs/FLUX.1-dev",
+    "providerModel": "lucataco/ai-toolkit"
+  },
+  {
+    "hfModel": "GoodiesHere/Apollo-LMMs-Apollo-3B-t32",
+    "providerModel": "lucataco/apollo-3b"
+  },
+  {
+    "hfModel": "GoodiesHere/Apollo-LMMs-Apollo-7B-t32",
+    "providerModel": "lucataco/apollo-7b"
+  },
+  {
+    "hfModel": "feizhengcong/CogvideoX-Interpolation",
+    "providerModel": "lucataco/cogvideox-interpolation"
+  },
+  {
+    "hfModel": "THUDM/CogView4-6B",
+    "providerModel": "lucataco/cogview4-6b"
+  },
+  {
+    "hfModel": "sesame/csm-1b",
+    "providerModel": "lucataco/csm-1b"
+  },
+  {
+    "hfModel": "deepseek-ai/DeepSeek-R1-Distill-Llama-70B",
+    "providerModel": "lucataco/deepseek-r1-70b"
+  },
+  {
+    "hfModel": "black-forest-labs/FLUX.1-dev",
+    "providerModel": "lucataco/diffusers-dreambooth-lora-x2"
+  },
+  {
+    "hfModel": "black-forest-labs/FLUX.1-dev",
+    "providerModel": "lucataco/flux-dev"
+  },
+  {
+    "hfModel": "black-forest-labs/FLUX.1-dev",
+    "providerModel": "lucataco/flux-dev-lora"
+  },
+  {
+    "hfModel": "black-forest-labs/FLUX.1-dev",
+    "providerModel": "lucataco/flux-dev-multi-lora"
+  },
+  {
+    "hfModel": "ali-vilab/In-Context-LoRA",
+    "providerModel": "lucataco/flux-in-context"
+  },
+  {
+    "hfModel": "black-forest-labs/FLUX.1-dev",
+    "providerModel": "lucataco/flux-rf-inversion"
+  },
+  {
+    "hfModel": "black-forest-labs/FLUX.1-schnell",
+    "providerModel": "lucataco/flux-schnell-lora"
+  },
+  {
+    "hfModel": "promeai/FLUX.1-controlnet-lineart-promeai",
+    "providerModel": "lucataco/flux.1-controlnet-lineart-promeai"
+  },
+  {
+    "hfModel": "alimama-creative/FLUX.1-Turbo-Alpha",
+    "providerModel": "lucataco/flux.1-turbo-alpha"
+  },
+  {
+    "hfModel": "hunyuanvideo-community/HunyuanVideo",
+    "providerModel": "lucataco/hunyuanvideo"
+  },
+  {
+    "hfModel": "hunyuanvideo-community/HunyuanVideo",
+    "providerModel": "lucataco/hunyuanvideo-community-lora"
+  },
+  {
+    "hfModel": "hunyuanvideo-community/HunyuanVideo",
+    "providerModel": "lucataco/hunyuanvideo-lora-trainer"
+  },
+  {
+    "hfModel": "SG161222/Realistic_Vision_V5.1_noVAE",
+    "providerModel": "lucataco/illusion-diffusion-hq"
+  },
+  {
+    "hfModel": "microsoft/Magma-8B",
+    "providerModel": "lucataco/magma-8b"
+  },
+  {
+    "hfModel": "answerdotai/ModernBERT-base",
+    "providerModel": "lucataco/modernbert-base"
+  },
+  {
+    "hfModel": "answerdotai/ModernBERT-large",
+    "providerModel": "lucataco/modernbert-large"
+  },
+  {
+    "hfModel": "vikhyatk/moondream2",
+    "providerModel": "lucataco/moondream-0.5b"
+  },
+  {
+    "hfModel": "tencent/HunyuanVideo",
+    "providerModel": "lucataco/musubi-tuner"
+  },
+  {
+    "hfModel": "meta-llama/Llama-3.2-11B-Vision",
+    "providerModel": "lucataco/ollama-llama3.2-vision-11b"
+  },
+  {
+    "hfModel": "meta-llama/Llama-3.2-90B-Vision-Instruct",
+    "providerModel": "lucataco/ollama-llama3.2-vision-90b"
+  },
+  {
+    "hfModel": "meta-llama/Llama-3.3-70B-Instruct",
+    "providerModel": "lucataco/ollama-llama3.3-70b"
+  },
+  {
+    "hfModel": "nvidia/Llama-3.1-Nemotron-70B-Instruct",
+    "providerModel": "lucataco/ollama-nemotron-70b"
+  },
+  {
+    "hfModel": "Qwen/Qwen2.5-72B-Instruct",
+    "providerModel": "lucataco/ollama-qwen2.5-72b"
+  },
+  {
+    "hfModel": "Qwen/QwQ-32B-Preview",
+    "providerModel": "lucataco/ollama-qwq"
+  },
+  {
+    "hfModel": "allenai/olmOCR-7B-0225-preview",
+    "providerModel": "lucataco/olmocr-7b"
+  },
+  {
+    "hfModel": "canopylabs/orpheus-3b-0.1-ft",
+    "providerModel": "lucataco/orpheus-3b-0.1-ft"
+  },
+  {
+    "hfModel": "microsoft/Phi-4-multimodal-instruct",
+    "providerModel": "lucataco/phi-4-multimodal-instruct"
+  },
+  {
+    "hfModel": "unsloth/QVQ-72B-Preview-bnb-4bit",
+    "providerModel": "lucataco/qvq-72b-preview"
+  },
+  {
+    "hfModel": "Qwen/Qwen2-VL-7B-Instruct",
+    "providerModel": "lucataco/qwen2-vl-7b-instruct"
+  },
+  {
+    "hfModel": "Qwen/Qwen2.5-Omni-7B",
+    "providerModel": "lucataco/qwen2.5-omni-7b"
+  },
+  {
+    "hfModel": "perplexity-ai/r1-1776",
+    "providerModel": "lucataco/r1-1776-70b"
+  },
+  {
+    "hfModel": "SG161222/Realistic_Vision_V5.1_noVAE",
+    "providerModel": "lucataco/realistic-vision-v5.1"
+  },
+  {
+    "hfModel": "Carve/tracer_b7",
+    "providerModel": "lucataco/remove-bg"
+  },
+  {
+    "hfModel": "stabilityai/stable-diffusion-3.5-large",
+    "providerModel": "lucataco/sd3.5-large-fine-tuner"
+  },
+  {
+    "hfModel": "HuggingFaceTB/SmolVLM-Instruct",
+    "providerModel": "lucataco/smolvlm-instruct"
+  },
+  {
+    "hfModel": "stabilityai/stable-diffusion-3.5-large",
+    "providerModel": "lucataco/stable-diffusion-3.5-large-lora"
+  },
+  {
+    "hfModel": "stabilityai/stable-diffusion-3.5-large",
+    "providerModel": "lucataco/stable-diffusion-3.5-large-lora-trainer"
+  },
+  {
+    "hfModel": "stepfun-ai/Step-Audio-TTS-3B",
+    "providerModel": "lucataco/step-audio-tts-3b"
+  },
+  {
+    "hfModel": "DAMO-NLP-SG/VideoLLaMA3-7B",
+    "providerModel": "lucataco/videollama3-7b"
+  },
+  {
+    "hfModel": "Wan-AI/Wan2.1-T2V-1.3B",
+    "providerModel": "lucataco/wan-2.1-1.3b-vid2vid"
+  },
+  {
+    "hfModel": "Wan-AI/Wan2.1-I2V-14B-480P-Diffusers",
+    "providerModel": "lucataco/wan2.1-i2v-lora"
+  },
+  {
+    "hfModel": "01-ai/Yi-1.5-6B",
+    "providerModel": "lucataco/yi-1.5-6b"
+  },
+  {
+    "hfModel": "Mayoita/mayoita-lora",
+    "providerModel": "mayoita/max-mayoita"
+  },
+  {
+    "hfModel": "meta-llama/Llama-4-Maverick-17B-128E-Instruct-Original",
+    "providerModel": "meta/llama-4-maverick-instruct"
+  },
+  {
+    "hfModel": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+    "providerModel": "meta/llama-4-scout-instruct"
+  },
+  {
+    "hfModel": "meta-llama/Llama-Guard-3-11B-Vision",
+    "providerModel": "meta/llama-guard-3-11b-vision"
+  },
+  {
+    "hfModel": "meta-llama/Llama-Guard-3-8B",
+    "providerModel": "meta/llama-guard-3-8b"
+  },
+  {
+    "hfModel": "meta-llama/LlamaGuard-7b",
+    "providerModel": "meta/llamaguard-7b"
+  },
+  {
+    "hfModel": "microsoft/OmniParser-v2.0",
+    "providerModel": "microsoft/omniparser-v2"
+  },
+  {
+    "hfModel": "mohsin-riad/upscaler-ultra",
+    "providerModel": "mohsin-riad/upscaler-ultra"
+  },
+  {
+    "hfModel": "LanguageBind/Video-LLaVA-7B-hf",
+    "providerModel": "n1jl0091/video-llava-7b-hf_replicate_n1jl0091"
+  },
+  {
+    "hfModel": "tencent/Hunyuan3D-2",
+    "providerModel": "ndreca/hunyuan3d-2"
+  },
+  {
+    "hfModel": "nicoquarks/javi-miller-meme",
+    "providerModel": "nicoquarks/javi-miller-meme-generator"
+  },
+  {
+    "hfModel": "nikolai35/flux-test",
+    "providerModel": "nikolai35/flux_test_test_test"
+  },
+  {
+    "hfModel": "noahsolomon/yumemono",
+    "providerModel": "noahgsolomon/yumemono"
+  },
+  {
+    "hfModel": "Efficient-Large-Model/Sana_1600M_1024px",
+    "providerModel": "nvidia/sana"
+  },
+  {
+    "hfModel": "Efficient-Large-Model/Sana_Sprint_1.6B_1024px_diffusers",
+    "providerModel": "nvidia/sana-sprint-1.6b"
+  },
+  {
+    "hfModel": "openai/whisper-large-v3",
+    "providerModel": "openai/whisper"
+  },
+  {
+    "hfModel": "ostris/Flex.1-alpha-Redux",
+    "providerModel": "ostris/flex-redux"
+  },
+  {
+    "hfModel": "ostris/Flex.1-alpha",
+    "providerModel": "ostris/flex.1-alpha"
+  },
+  {
+    "hfModel": "black-forest-labs/FLUX.1-dev",
+    "providerModel": "ostris/flux-dev-lora-trainer"
+  },
+  {
+    "hfModel": "ostris/OpenFLUX.1",
+    "providerModel": "ostris/openflux.1"
+  },
+  {
+    "hfModel": "plimper/saduk",
+    "providerModel": "panosphotos/saduk"
+  },
+  {
+    "hfModel": "githubcto/framepack",
+    "providerModel": "paullux/framepack-runner"
+  },
+  {
+    "hfModel": "nvidia/GR00T-N1-2B",
+    "providerModel": "phospho-app/gr00t-policy"
+  },
+  {
+    "hfModel": "phxdev/flux-ska-band",
+    "providerModel": "phxdev1/flux-ska-band"
+  },
+  {
+    "hfModel": "Xkev/Llama-3.2V-11B-cot",
+    "providerModel": "pku-yuangroup/llava-cot"
+  },
+  {
+    "hfModel": "playgroundai/playground-v2.5-1024px-aesthetic",
+    "providerModel": "playgroundai/playground-v2.5-1024px-aesthetic"
+  },
+  {
+    "hfModel": "mit-han-lab/svdquant-models",
+    "providerModel": "pollinations/flux-schnell-svdquant"
+  },
+  {
+    "hfModel": "Freepik/F-Lite",
+    "providerModel": "prunaai/f-lite-juiced"
+  },
+  {
+    "hfModel": "black-forest-labs/FLUX.1-schnell",
+    "providerModel": "prunaai/flux-schnell"
+  },
+  {
+    "hfModel": "black-forest-labs/FLUX.1-dev",
+    "providerModel": "prunaai/flux.1-dev"
+  },
+  {
+    "hfModel": "HiDream-ai/HiDream-E1-Full",
+    "providerModel": "prunaai/hidream-e1"
+  },
+  {
+    "hfModel": "HiDream-ai/HiDream-I1-Fast",
+    "providerModel": "prunaai/hidream-l1-fast"
+  },
+  {
+    "hfModel": "tencent/Hunyuan3D-2",
+    "providerModel": "prunaai/hunyuan3d-2"
+  },
+  {
+    "hfModel": "Qwen/Qwen3-32B",
+    "providerModel": "prunaai/qwen3-32b"
+  },
+  {
+    "hfModel": "Wan-AI/Wan2.1-VACE-1.3B",
+    "providerModel": "prunaai/vace-1.3b"
+  },
+  {
+    "hfModel": "Wan-AI/Wan2.1-VACE-14B",
+    "providerModel": "prunaai/vace-14b"
+  },
+  {
+    "hfModel": "Qwen/Qwen2.5-Coder-32B-Instruct",
+    "providerModel": "qubit999/qwen2.5-coder-32b-instruct"
+  },
+  {
+    "hfModel": "ResembleAI/resemble-enhance",
+    "providerModel": "resemble-ai/resemble-enhance"
+  },
+  {
+    "hfModel": "romanostudios/mr-nazare",
+    "providerModel": "romanostudios/nazare"
+  },
+  {
+    "hfModel": "allenai/OLMo-2-1124-13B-Instruct",
+    "providerModel": "saysharastuff/olmo-2-1124-13b-instruct"
+  },
+  {
+    "hfModel": "Slashbot/floki",
+    "providerModel": "slashbot28/floki"
+  },
+  {
+    "hfModel": "Slashbot/slashxx",
+    "providerModel": "slashbot28/slashxx"
+  },
+  {
+    "hfModel": "ai4bharat/indic-parler-tts-pretrained",
+    "providerModel": "sruthiselvaraj/indicparlertts"
+  },
+  {
+    "hfModel": "stabilityai/stable-diffusion-xl-base-1.0",
+    "providerModel": "stability-ai/sdxl"
+  },
+  {
+    "hfModel": "stabilityai/stable-diffusion-3.5-large",
+    "providerModel": "stability-ai/stable-diffusion-3.5-large"
+  },
+  {
+    "hfModel": "stabilityai/stable-diffusion-3.5-large-turbo",
+    "providerModel": "stability-ai/stable-diffusion-3.5-large-turbo"
+  },
+  {
+    "hfModel": "stabilityai/stable-diffusion-3.5-medium",
+    "providerModel": "stability-ai/stable-diffusion-3.5-medium"
+  },
+  {
+    "hfModel": "black-forest-labs/FLUX.1-dev",
+    "providerModel": "superhighfives/birds-and-flowers"
+  },
+  {
+    "hfModel": "zeke/rider-waite-tarot-flux",
+    "providerModel": "tarot-cards/rider-waite"
+  },
+  {
+    "hfModel": "zeke/transamerica-pyramid",
+    "providerModel": "tarot-cards/transamerica-pyramid"
+  },
+  {
+    "hfModel": "tencent/HunyuanVideo",
+    "providerModel": "tencent/hunyuan-video"
+  },
+  {
+    "hfModel": "tencent/Hunyuan3D-2",
+    "providerModel": "tencent/hunyuan3d-2"
+  },
+  {
+    "hfModel": "tencent/Hunyuan3D-2mv",
+    "providerModel": "tencent/hunyuan3d-2mv"
+  },
+  {
+    "hfModel": "potato987/flux-noto-emoji",
+    "providerModel": "that1potato/flux-noto-emoji"
+  },
+  {
+    "hfModel": "saquiboye/oye-cartoon",
+    "providerModel": "thefluxtrain/oye-cartoon"
+  },
+  {
+    "hfModel": "ResembleAI/chatterbox",
+    "providerModel": "thomcle/chatterbox-tts"
+  },
+  {
+    "hfModel": "THUDM/CogVideoX-5b-I2V",
+    "providerModel": "thudm/cogvideox-i2v"
+  },
+  {
+    "hfModel": "THUDM/CogVideoX-5b",
+    "providerModel": "thudm/cogvideox-t2v"
+  },
+  {
+    "hfModel": "replicate/Nikki",
+    "providerModel": "tina94b/nikki"
+  },
+  {
+    "hfModel": "amphion/MaskGCT",
+    "providerModel": "ttsds/amphion_maskgct"
+  },
+  {
+    "hfModel": "amphion/naturalspeech2_libritts",
+    "providerModel": "ttsds/amphion_naturalspeech2"
+  },
+  {
+    "hfModel": "amphion",
+    "providerModel": "ttsds/amphion_valle"
+  },
+  {
+    "hfModel": "amphion/Vevo",
+    "providerModel": "ttsds/amphion_vevo"
+  },
+  {
+    "hfModel": "suno/bark",
+    "providerModel": "ttsds/bark"
+  },
+  {
+    "hfModel": "suno/bark",
+    "providerModel": "ttsds/bark_small"
+  },
+  {
+    "hfModel": "fishaudio/fish-speech-1",
+    "providerModel": "ttsds/fishspeech_1_0"
+  },
+  {
+    "hfModel": "fishaudio/fish-speech-1.2",
+    "providerModel": "ttsds/fishspeech_1_1"
+  },
+  {
+    "hfModel": "fishaudio/fish-speech-1.2",
+    "providerModel": "ttsds/fishspeech_1_2"
+  },
+  {
+    "hfModel": "fishaudio/fish-speech-1.2-sft",
+    "providerModel": "ttsds/fishspeech_1_2_sft"
+  },
+  {
+    "hfModel": "fishaudio/fish-speech-1.4",
+    "providerModel": "ttsds/fishspeech_1_4"
+  },
+  {
+    "hfModel": "fishaudio/fish-speech-1.5",
+    "providerModel": "ttsds/fishspeech_1_5"
+  },
+  {
+    "hfModel": "erax-ai/EraX-Smile-Female-F5-V1.0",
+    "providerModel": "tuannha/f5-tts-vi"
+  },
+  {
+    "hfModel": "tencent/InstantCharacter",
+    "providerModel": "tuannha/instant-character"
+  },
+  {
+    "hfModel": "collos/uniodonto",
+    "providerModel": "vcollos/jalves"
+  },
+  {
+    "hfModel": "vcollos/joaquim",
+    "providerModel": "vcollos/joaquim"
+  },
+  {
+    "hfModel": "collos/uniodonto",
+    "providerModel": "vcollos/julio"
+  },
+  {
+    "hfModel": "collos/uniodonto",
+    "providerModel": "vcollos/pedro"
+  },
+  {
+    "hfModel": "Shitao/OmniGen-v1",
+    "providerModel": "vectorspacelab/omnigen"
+  },
+  {
+    "hfModel": "openai/whisper-large-v3",
+    "providerModel": "villesau/whisper-timestamped"
+  },
+  {
+    "hfModel": "Wan-AI/Wan2.1-T2V-1.3B",
+    "providerModel": "wan-video/wan-2.1-1.3b"
+  },
+  {
+    "hfModel": "Wan-AI/Wan2.1-T2V-14B",
+    "providerModel": "wavespeedai/wan-2.1-i2v-480p"
+  },
+  {
+    "hfModel": "Wan-AI/Wan2.1-T2V-14B",
+    "providerModel": "wavespeedai/wan-2.1-i2v-720p"
+  },
+  {
+    "hfModel": "Wan-AI/Wan2.1-T2V-14B",
+    "providerModel": "wavespeedai/wan-2.1-t2v-480p"
+  },
+  {
+    "hfModel": "Wan-AI/Wan2.1-T2V-14B",
+    "providerModel": "wavespeedai/wan-2.1-t2v-720p"
+  },
+  {
+    "hfModel": "SWivid/F5-TTS",
+    "providerModel": "x-lance/f5-tts"
+  },
+  {
+    "hfModel": "XLabs-AI/flux-controlnet-collections",
+    "providerModel": "xlabs-ai/flux-dev-controlnet"
+  },
+  {
+    "hfModel": "replicate/my-model",
+    "providerModel": "yanyan19991/my-gufeng"
+  },
+  {
+    "hfModel": "rhymes-ai/Allegro",
+    "providerModel": "zsxkib/allegro"
+  },
+  {
+    "hfModel": "nari-labs/Dia-1.6B",
+    "providerModel": "zsxkib/dia"
+  },
+  {
+    "hfModel": "spaces/ByteDance",
+    "providerModel": "zsxkib/dream-o"
+  },
+  {
+    "hfModel": "alimama-creative/FLUX.1-dev-Controlnet-Inpainting-Alpha",
+    "providerModel": "zsxkib/flux-dev-inpainting-controlnet"
+  },
+  {
+    "hfModel": "feizhengcong/fluxmusic",
+    "providerModel": "zsxkib/flux-music"
+  },
+  {
+    "hfModel": "lllyasviel/FramePackI2V_HY",
+    "providerModel": "zsxkib/framepack"
+  },
+  {
+    "hfModel": "kyutai/hibiki-1b-pytorch-bf16",
+    "providerModel": "zsxkib/hibiki"
+  },
+  {
+    "hfModel": "tencent/HunyuanVideo",
+    "providerModel": "zsxkib/hunyuan-video-lora"
+  },
+  {
+    "hfModel": "tencent/HunyuanVideo",
+    "providerModel": "zsxkib/hunyuan-video2video"
+  },
+  {
+    "hfModel": "ByteDance/InfiniteYou",
+    "providerModel": "zsxkib/infinite-you"
+  },
+  {
+    "hfModel": "jinaai/jina-clip-v2",
+    "providerModel": "zsxkib/jina-clip-v2"
+  },
+  {
+    "hfModel": "spaces/rcfeng",
+    "providerModel": "zsxkib/keep"
+  },
+  {
+    "hfModel": "moonshotai/Kimi-Audio-7B-Instruct",
+    "providerModel": "zsxkib/kimi-audio-7b-instruct"
+  },
+  {
+    "hfModel": "moonshotai/Kimi-VL-A3B-Thinking",
+    "providerModel": "zsxkib/kimi-vl-a3b-thinking"
+  },
+  {
+    "hfModel": "memoavatar/memo",
+    "providerModel": "zsxkib/memo"
+  },
+  {
+    "hfModel": "hkchengrex/MMAudio",
+    "providerModel": "zsxkib/mmaudio"
+  },
+  {
+    "hfModel": "hkchengrex/MMAudio",
+    "providerModel": "zsxkib/mmaudio-t4"
+  },
+  {
+    "hfModel": "allenai/Molmo-7B-D-0924",
+    "providerModel": "zsxkib/molmo-7b"
+  },
+  {
+    "hfModel": "rain1011/pyramid-flow-sd3",
+    "providerModel": "zsxkib/pyramid-flow"
+  },
+  {
+    "hfModel": "LeonJoe13/Sonic",
+    "providerModel": "zsxkib/sonic"
+  },
+  {
+    "hfModel": "SherryX/STAR",
+    "providerModel": "zsxkib/star"
+  },
+  {
+    "hfModel": "stepfun-ai/stepvideo-t2v-turbo",
+    "providerModel": "zsxkib/step-video-t2v"
+  },
+  {
+    "hfModel": "stepfun-ai/Step1X-Edit",
+    "providerModel": "zsxkib/step1x-edit"
+  },
+  {
+    "hfModel": "OAOA/InvSR",
+    "providerModel": "zsyoaoa/invsr"
+  }
+]

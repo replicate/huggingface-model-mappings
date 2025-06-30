@@ -92,7 +92,15 @@ if (newMappings.length > 0) {
 	console.log("\n\nAdding new mappings:");
     for (const model of newMappings) {
         console.log(`${model.hfModel} - ${model.status}`);
-        await hf.registerMappingItem(model);
+        try {
+            await hf.registerMappingItem(model);
+        } catch (error) {
+            if (error instanceof Error && error.message.includes('409 Conflict')) {
+                console.log(`Skipping existing mapping for model: ${model.hfModel}`);
+                continue;
+            }
+            throw error;
+        }
     }
 } else {
 	console.log("\n\nNo new mappings to add.");
