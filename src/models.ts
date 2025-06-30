@@ -101,4 +101,8 @@ export const inferenceModels: InferenceModel[] = [
         hfModel: "ResembleAI/chatterbox",
         providerModel: "resemble-ai/chatterbox",
     },
+    {
+        hfModel: "MeiGen-AI/MeiGen-MultiTalk",
+        providerModel: "zsxkib/multitalk",
+    }
 ];
