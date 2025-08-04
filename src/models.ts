@@ -66,25 +66,6 @@ export const inferenceModels: InferenceModel[] = [
         hfModel: "genmo/mochi-1-preview",
         providerModel: "genmoai/mochi-1:1944af04d098ef69bed7f9d335d102e652203f268ec4aaa2d836f6217217e460",
         task: "text-to-video",
-        status: "staging",
-    },
-    {
-        hfModel: "BAAI/nova-d48w1024-osp480",
-        providerModel: "chenxwh/nova-t2v",
-        task: "text-to-video",
-        status: "staging",
-    },
-    {
-        hfModel: "fofr/hunyuan-cyberpunk-mod",
-        providerModel: "fofr/hunyuan-cyberpunk-mod",
-        task: "text-to-video",
-        status: "staging",
-    },
-    {
-        hfModel: "fofr/wan-14b-laezel",
-        providerModel: "fofr/wan-14b-laezel",
-        task: "text-to-video",
-        status: "staging",
     },
     {
         hfModel: "FastVideo/FastHunyuan",
