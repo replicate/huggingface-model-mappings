@@ -135,7 +135,7 @@ export const inferenceModels: InferenceModel[] = [
     {
         hfModel: "Wan-AI/Wan2.2-I2V-A14B",
         providerModel: "wan-video/wan-2.2-i2v-fast",
-    }
+    },
 
     // Image-to-Image models
     {
