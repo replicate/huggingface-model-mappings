@@ -45,7 +45,6 @@ export const inferenceModels: InferenceModel[] = [
     {
         hfModel: "playgroundai/playground-v2.5-1024px-aesthetic",
         providerModel: "playgroundai/playground-v2.5-1024px-aesthetic:a45f82a1382bed5c7aeb861dac7c7d191b0fdf74d8d57c4a0e6ed7d4d0bf7d24",
-        status: "staging",
     },
     {
         hfModel: "Qwen/Qwen-Image",
