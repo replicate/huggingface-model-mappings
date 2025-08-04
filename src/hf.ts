@@ -87,8 +87,8 @@ class HFInferenceProviderClient {
     });
   }
 
-  async deleteMappingItem(hfModel: string): Promise<MappingItem> {
-    const url = `${this.baseUrl}/api/partners/${this.provider}/models?hfModel=${encodeURIComponent(hfModel)}`;
+  async deleteMappingItem(mappingId: string): Promise<MappingItem> {
+    const url = `${this.baseUrl}/api/partners/${this.provider}/models/${mappingId}`;
 
     return this.request<MappingItem>(url, {
       method: 'DELETE'
