@@ -96,6 +96,7 @@ export const inferenceModels: InferenceModel[] = [
     {
         hfModel: "black-forest-labs/FLUX.1-Kontext-dev",
         providerModel: "black-forest-labs/flux-kontext-dev",
+        task: "image-to-image",
     },
     {
         hfModel: "ResembleAI/chatterbox",
@@ -104,5 +105,9 @@ export const inferenceModels: InferenceModel[] = [
     {
         hfModel: "MeiGen-AI/MeiGen-MultiTalk",
         providerModel: "zsxkib/multitalk",
+    },
+    {
+        hfModel: "Qwen/Qwen-Image",
+        providerModel: "wavespeedai/qwen-image",
     }
 ];
