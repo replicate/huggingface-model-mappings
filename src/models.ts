@@ -108,6 +108,6 @@ export const inferenceModels: InferenceModel[] = [
     },
     {
         hfModel: "Qwen/Qwen-Image",
-        providerModel: "wavespeedai/qwen-image",
+        providerModel: "qwen/qwen-image",
     }
 ];
