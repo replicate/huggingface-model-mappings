@@ -128,6 +128,14 @@ export const inferenceModels: InferenceModel[] = [
         task: "text-to-video",
         status: "staging",
     },
+    {
+        hfModel: "Wan-AI/Wan2.2-T2V-A14B",
+        providerModel: "wan-video/wan-2.2-t2v-fast"
+    },
+    {
+        hfModel: "Wan-AI/Wan2.2-I2V-A14B",
+        providerModel: "wan-video/wan-2.2-i2v-fast",
+    }
 
     // Image-to-Image models
     {
