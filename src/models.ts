@@ -64,11 +64,6 @@ export const inferenceModels: InferenceModel[] = [
         task: "text-to-video",
     },
     {
-        hfModel: "Lightricks/LTX-Video",
-        providerModel: "lightricks/ltx-video:8c47da666861d081eeb4d1261853087de23923a268a69b63febdf5dc1dee08e4",
-        task: "text-to-video",
-    },
-    {
         hfModel: "genmo/mochi-1-preview",
         providerModel: "genmoai/mochi-1:1944af04d098ef69bed7f9d335d102e652203f268ec4aaa2d836f6217217e460",
         task: "text-to-video",
@@ -132,9 +127,15 @@ export const inferenceModels: InferenceModel[] = [
         hfModel: "Wan-AI/Wan2.2-T2V-A14B",
         providerModel: "wan-video/wan-2.2-t2v-fast"
     },
+
+    // Image-to-Video models
     {
         hfModel: "Wan-AI/Wan2.2-I2V-A14B",
         providerModel: "wan-video/wan-2.2-i2v-fast",
+    },
+    {
+        hfModel: "Lightricks/LTX-Video",
+        providerModel: "lightricks/ltx-video:8c47da666861d081eeb4d1261853087de23923a268a69b63febdf5dc1dee08e4",
     },
 
     // Image-to-Image models
