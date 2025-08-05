@@ -64,8 +64,9 @@ export const inferenceModels: InferenceModel[] = [
     },
     {
         hfModel: "genmo/mochi-1-preview",
-        providerModel: "genmoai/mochi-1:1944af04d098ef69bed7f9d335d102e652203f268ec4aaa2d836f6217217e460",
+        providerModel: "genmoai/mochi-1",
         task: "text-to-video",
+        status: "live",
     },
     {
         hfModel: "FastVideo/FastHunyuan",
@@ -123,15 +124,13 @@ export const inferenceModels: InferenceModel[] = [
         hfModel: "black-forest-labs/FLUX.1-Kontext-dev",
         providerModel: "black-forest-labs/flux-kontext-dev",
         task: "image-to-image",
-        status: "live",
     },
 
     // Text-to-Speech models
     {
         hfModel: "hexgrad/Kokoro-82M",
-        providerModel: "jaaari/kokoro-82m:dfdf537ba482b029e0a761699e6f55e9162cfd159270bfe0e44857caa5f275a6",
+        providerModel: "jaaari/kokoro-82m",
         task: "text-to-speech",
-        status: "staging",
     },
 
     // Automatic Speech Recognition models
