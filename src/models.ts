@@ -116,7 +116,7 @@ export const inferenceModels: InferenceModel[] = [
     },
     {
         hfModel: "Lightricks/LTX-Video",
-        providerModel: "lightricks/ltx-video:8c47da666861d081eeb4d1261853087de23923a268a69b63febdf5dc1dee08e4",
+        providerModel: "lightricks/ltx-video",
     },
 
     // Image-to-Image models
@@ -138,18 +138,15 @@ export const inferenceModels: InferenceModel[] = [
         hfModel: "pyannote/speaker-diarization-3.1",
         providerModel: "konieshadow/speaker-diarization",
         task: "automatic-speech-recognition",
-        status: "staging",
     },
     {
         hfModel: "microsoft/Phi-4-multimodal-instruct",
         providerModel: "lucataco/phi-4-multimodal-instruct",
         task: "automatic-speech-recognition",
-        status: "staging",
     },
     {
         hfModel: "openai/whisper-large-v3",
         providerModel: "openai/whisper",
         task: "automatic-speech-recognition",
-        status: "staging",
     },
 ];
