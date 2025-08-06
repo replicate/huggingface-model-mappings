@@ -73,46 +73,9 @@ export const inferenceModels: InferenceModel[] = [
         task: "text-to-video",
     },
     {
-        hfModel: "genmo/mochi-1-preview",
-        providerModel: "genmoai/mochi-1",
-        task: "text-to-video",
-        status: "live",
-    },
-    {
-        hfModel: "FastVideo/FastHunyuan",
-        providerModel: "jzhang38/fast-hunyuan-video",
-        task: "text-to-video",
-        status: "staging",
-    },
-    {
-        hfModel: "FastVideo/FastMochi-diffusers",
-        providerModel: "jzhang38/fast-mochi",
-        task: "text-to-video",
-        status: "staging",
-    },
-    {
         hfModel: "tencent/HunyuanVideo",
         providerModel: "tencent/hunyuan-video",
         task: "text-to-video",
-        status: "staging",
-    },
-    {
-        hfModel: "zai-org/CogVideoX-5b",
-        providerModel: "thudm/cogvideox-t2v",
-        task: "text-to-video",
-        status: "staging",
-    },
-    {
-        hfModel: "rhymes-ai/Allegro",
-        providerModel: "zsxkib/allegro",
-        task: "text-to-video",
-        status: "staging",
-    },
-    {
-        hfModel: "rain1011/pyramid-flow-sd3",
-        providerModel: "zsxkib/pyramid-flow",
-        task: "text-to-video",
-        status: "staging",
     },
 
     // Image-to-Video models
