@@ -63,6 +63,16 @@ export const inferenceModels: InferenceModel[] = [
         task: "text-to-video",
     },
     {
+        hfModel: "Wan-AI/Wan2.2-TI2V-5B",
+        providerModel: "wan-video/wan-2.2-5b-fast",
+        task: "text-to-video",
+    },
+    {
+        hfModel: "Wan-AI/Wan2.2-T2V-A14B",
+        providerModel: "wan-video/wan-2.2-t2v-fast",
+        task: "text-to-video",
+    },
+    {
         hfModel: "genmo/mochi-1-preview",
         providerModel: "genmoai/mochi-1",
         task: "text-to-video",
@@ -103,10 +113,6 @@ export const inferenceModels: InferenceModel[] = [
         providerModel: "zsxkib/pyramid-flow",
         task: "text-to-video",
         status: "staging",
-    },
-    {
-        hfModel: "Wan-AI/Wan2.2-T2V-A14B",
-        providerModel: "wan-video/wan-2.2-t2v-fast"
     },
 
     // Image-to-Video models
