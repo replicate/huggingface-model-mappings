@@ -50,6 +50,10 @@ export const inferenceModels: InferenceModel[] = [
         hfModel: "Qwen/Qwen-Image",
         providerModel: "qwen/qwen-image",
     },
+    {
+        hfModel: "black-forest-labs/FLUX.1-Krea-dev",
+        providerModel: "black-forest-labs/flux-krea-dev",
+    },
 
     // Text-to-Video models
     {
