@@ -102,19 +102,14 @@ export const inferenceModels: InferenceModel[] = [
     // Text-to-Speech models
     {
         hfModel: "hexgrad/Kokoro-82M",
-        providerModel: "jaaari/kokoro-82m",
+        providerModel: "jaaari/kokoro-82m:f559560eb822dc509045f3921a1921234918b91739db4bf3daab2169b71c7a13",
         task: "text-to-speech",
     },
 
     // Automatic Speech Recognition models
     {
-        hfModel: "pyannote/speaker-diarization-3.1",
-        providerModel: "konieshadow/speaker-diarization",
-        task: "automatic-speech-recognition",
-    },
-    {
         hfModel: "microsoft/Phi-4-multimodal-instruct",
-        providerModel: "lucataco/phi-4-multimodal-instruct",
+        providerModel: "microsoft/phi-4-multimodal-instruct:40c8f5c03ce250441855e776528bafd11cdb302c6677613acc0942c58dbd0afa",
         task: "automatic-speech-recognition",
     },
     {
