@@ -31,6 +31,10 @@ export const inferenceModels: InferenceModel[] = [
         providerModel: "black-forest-labs/flux-dev",
     },
     {
+        hfModel: "stabilityai/stable-diffusion-3-medium",
+        providerModel: "stability-ai/stable-diffusion-3",
+    },
+    {
         hfModel: "stabilityai/stable-diffusion-3.5-large",
         providerModel: "stability-ai/stable-diffusion-3.5-large",
     },
@@ -67,18 +71,13 @@ export const inferenceModels: InferenceModel[] = [
         task: "text-to-video",
     },
     {
-        hfModel: "Wan-AI/Wan2.2-TI2V-5B",
-        providerModel: "wan-video/wan-2.2-5b-fast",
-        task: "text-to-video",
-    },
-    {
         hfModel: "Wan-AI/Wan2.2-T2V-A14B",
         providerModel: "wan-video/wan-2.2-t2v-fast",
         task: "text-to-video",
     },
     {
-        hfModel: "tencent/HunyuanVideo",
-        providerModel: "tencent/hunyuan-video",
+        hfModel: "Wan-AI/Wan2.2-TI2V-5B",
+        providerModel: "wan-video/wan-2.2-5b-fast",
         task: "text-to-video",
     },
 
