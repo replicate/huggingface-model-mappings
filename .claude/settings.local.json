@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:huggingface.co)",
+      "Bash(git checkout:*)",
+      "Bash(git add:*)",
+      "Bash(git push:*)",
+      "Bash(open https://github.com/replicate/huggingface-model-mappings/pull/23)"
+    ],
+    "deny": []
+  }
+}
