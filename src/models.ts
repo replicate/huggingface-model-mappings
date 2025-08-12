@@ -113,7 +113,7 @@ export const inferenceModels: InferenceModel[] = [
     },
     {
         hfModel: "openai/whisper-large-v3",
-        providerModel: "openai/whisper",
+        providerModel: "openai/whisper:8099696689d249cf8b122d833c36ac3f75505c666a395ca40ef26f68e7d3d16e",
         task: "automatic-speech-recognition",
     },
 ];
