@@ -17,7 +17,7 @@ interface TagFilterMappingItem {
 type MappingItem = ModelMappingItem | TagFilterMappingItem;
 
 interface StatusUpdateRequest {
-  hfModel: string;
+  mappingId: string;
   status: 'live' | 'staging';
 }
 
@@ -96,14 +96,14 @@ class HFInferenceProviderClient {
   }
 
   async updateMappingItemStatus(statusUpdate: StatusUpdateRequest): Promise<MappingItem> {
-    const url = `${this.baseUrl}/api/partners/${this.provider}/models/status`;
+    const url = `${this.baseUrl}/api/partners/${this.provider}/models/${statusUpdate.mappingId}/status`;
 
     return this.request<MappingItem>(url, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify(statusUpdate),
+      body: JSON.stringify({ status: statusUpdate.status }),
     });
   }
   
