@@ -1,4 +1,5 @@
 interface ModelMappingItem {
+  _id?: string;
   task: string;
   hfModel: string;
   providerModel: string;
@@ -6,6 +7,7 @@ interface ModelMappingItem {
 }
 
 interface TagFilterMappingItem {
+  _id?: string;
   task: string;
   providerModel: string;
   status?: 'live' | 'staging';
@@ -120,6 +122,32 @@ class HFInferenceProviderClient {
     return Object.values(mappings).flatMap(taskMappings => 
       Object.keys(taskMappings)
     );
+  }
+
+  async getMappingIdByHfModel(hfModel: string): Promise<string | undefined> {
+    const mappings = await this.listMappingItems();
+    for (const taskMappings of Object.values(mappings)) {
+      const mapping = taskMappings[hfModel];
+      if (mapping && mapping._id) {
+        return mapping._id;
+      }
+    }
+    return undefined;
+  }
+
+  async createHfModelToMappingIdMap(): Promise<Map<string, string>> {
+    const mappings = await this.listMappingItems();
+    const map = new Map<string, string>();
+    
+    for (const taskMappings of Object.values(mappings)) {
+      for (const [hfModel, mapping] of Object.entries(taskMappings)) {
+        if (mapping._id) {
+          map.set(hfModel, mapping._id);
+        }
+      }
+    }
+    
+    return map;
   }
 
   async getMappingsByProvider(provider: string): Promise<Record<string, Record<string, MappingItem>>> {
