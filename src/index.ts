@@ -81,6 +81,8 @@ if (unsupportedModels.length > 0) {
 
 // Use only supported models for mapping operations
 const existingHFModelIds = await hf.listMappingIds();
+// Create a lookup map for efficient mapping ID retrieval during status updates
+const hfModelToMappingIdMap = await hf.createHfModelToMappingIdMap();
 
 console.log("\n\nExisting HF model IDs:");
 console.log(existingHFModelIds);
@@ -102,10 +104,23 @@ if (existingMappings.length > 0) {
 	console.log(`\n\nUpdating statuses for ${existingMappings.length} existing mappings:`);
     for (const model of existingMappings) {
         console.log(`${model.hfModel} - ${model.status}`);
-        await hf.updateMappingItemStatus({
-            hfModel: model.hfModel,
-            status: model.status,
-        });
+        const mappingId = hfModelToMappingIdMap.get(model.hfModel);
+        if (mappingId) {
+            try {
+                await hf.updateMappingItemStatus({
+                    mappingId: mappingId,
+                    status: model.status,
+                });
+            } catch (error) {
+                if (error instanceof Error && error.message.includes('does not support task')) {
+                    console.log(`Skipping ${model.hfModel}: ${model.task} task not supported for status updates`);
+                } else {
+                    throw error;
+                }
+            }
+        } else {
+            console.error(`Could not find mapping ID for ${model.hfModel}`);
+        }
     }
 } else {
 	console.log("\n\nNo existing mappings to update.");
