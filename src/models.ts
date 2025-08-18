@@ -55,6 +55,10 @@ export const inferenceModels: InferenceModel[] = [
         providerModel: "qwen/qwen-image",
     },
     {
+        hfModel: "Qwen/Qwen-Image-Edit",
+        providerModel: "qwen/qwen-image-edit",
+    },
+    {
         hfModel: "black-forest-labs/FLUX.1-Krea-dev",
         providerModel: "black-forest-labs/flux-krea-dev",
     },
