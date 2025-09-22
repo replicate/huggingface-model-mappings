@@ -35,6 +35,10 @@ export const inferenceModels: InferenceModel[] = [
         providerModel: "stability-ai/stable-diffusion-3",
     },
     {
+        hfModel: "stabilityai/stable-diffusion-3.5-medium",
+        providerModel: "stability-ai/stable-diffusion-3.5-medium",
+    },
+    {
         hfModel: "stabilityai/stable-diffusion-3.5-large",
         providerModel: "stability-ai/stable-diffusion-3.5-large",
     },
