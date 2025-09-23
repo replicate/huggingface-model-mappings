@@ -109,6 +109,16 @@ export const inferenceModels: InferenceModel[] = [
         providerModel: "black-forest-labs/flux-kontext-dev",
         task: "image-to-image",
     },
+    {
+        hfModel: "Qwen/Qwen-Image-Edit",
+        providerModel: "qwen/qwen-image-edit",
+        task: "image-to-image",
+    },
+    {
+        hfModel: "Qwen/Qwen-Image-Edit-2509",
+        providerModel: "qwen/qwen-image-edit-plus",
+        task: "image-to-image",
+    },
 
     // Text-to-Speech models
     {
