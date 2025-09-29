@@ -92,6 +92,11 @@ export const inferenceModels: InferenceModel[] = [
         providerModel: "wan-video/wan-2.2-5b-fast",
         task: "text-to-video",
     },
+    {
+        hfModel: "Wan-AI/Wan2.2-T2V-A14B-Diffusers",
+        providerModel: "wan-video/wan-2.2-t2v-fast",
+        task: "text-to-video",
+    },
 
     // Image-to-Video models
     {
