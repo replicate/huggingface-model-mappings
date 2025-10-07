@@ -70,6 +70,10 @@ export const inferenceModels: InferenceModel[] = [
         hfModel: "tencent/HunyuanImage-2.1",
         providerModel: "tencent/hunyuan-image-2.1",
     },
+    {
+        hfModel: "tencent/HunyuanImage-3.0",
+        providerModel: "tencent/hunyuan-image-3",
+    },
 
     // Text-to-Video models
     {
