@@ -101,6 +101,11 @@ export const inferenceModels: InferenceModel[] = [
         providerModel: "wan-video/wan-2.2-t2v-fast",
         task: "text-to-video",
     },
+    {
+        hfModel: "akhaliq/veo3.1-fast",
+        providerModel: "google/veo-3.1-fast",
+        task: "text-to-video",
+    },
 
     // Image-to-Video models
     {
