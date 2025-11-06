@@ -11,8 +11,20 @@ export interface InferenceModel {
 export const inferenceModels: InferenceModel[] = [
     // Text-to-Image models
     {
-        hfModel: "stabilityai/stable-diffusion-xl-base-1.0",
-        providerModel: "stability-ai/sdxl:7762fd07cf82c948538e41f63f77d685e02b063e37e496e96eefd46c929f9bdc",
+        hfModel: "black-forest-labs/FLUX.1-dev",
+        providerModel: "black-forest-labs/flux-dev",
+    },
+    {
+        hfModel: "black-forest-labs/FLUX.1-Krea-dev",
+        providerModel: "black-forest-labs/flux-krea-dev",
+    },
+    {
+        hfModel: "black-forest-labs/FLUX.1-schnell",
+        providerModel: "black-forest-labs/flux-schnell",
+    },
+    {
+        hfModel: "briaai/FIBO",
+        providerModel: "bria/fibo",
     },
     {
         hfModel: "ByteDance/SDXL-Lightning",
@@ -23,12 +35,16 @@ export const inferenceModels: InferenceModel[] = [
         providerModel: "bytedance/hyper-flux-16step",
     },
     {
-        hfModel: "black-forest-labs/FLUX.1-schnell",
-        providerModel: "black-forest-labs/flux-schnell",
+        hfModel: "playgroundai/playground-v2.5-1024px-aesthetic",
+        providerModel: "playgroundai/playground-v2.5-1024px-aesthetic:a45f82a1382bed5c7aeb861dac7c7d191b0fdf74d8d57c4a0e6ed7d4d0bf7d24",
     },
     {
-        hfModel: "black-forest-labs/FLUX.1-dev",
-        providerModel: "black-forest-labs/flux-dev",
+        hfModel: "Qwen/Qwen-Image",
+        providerModel: "qwen/qwen-image",
+    },
+    {
+        hfModel: "Qwen/Qwen-Image-Edit",
+        providerModel: "qwen/qwen-image-edit",
     },
     {
         hfModel: "stabilityai/stable-diffusion-3-medium",
@@ -47,24 +63,8 @@ export const inferenceModels: InferenceModel[] = [
         providerModel: "stability-ai/stable-diffusion-3.5-large-turbo",
     },
     {
-        hfModel: "zeke/rider-waite-tarot-flux",
-        providerModel: "tarot-cards/rider-waite:6d77a07ef88e8a09389385cb14d98b12629a4b23b0537b01dfeb833c32827546",
-    },
-    {
-        hfModel: "playgroundai/playground-v2.5-1024px-aesthetic",
-        providerModel: "playgroundai/playground-v2.5-1024px-aesthetic:a45f82a1382bed5c7aeb861dac7c7d191b0fdf74d8d57c4a0e6ed7d4d0bf7d24",
-    },
-    {
-        hfModel: "Qwen/Qwen-Image",
-        providerModel: "qwen/qwen-image",
-    },
-    {
-        hfModel: "Qwen/Qwen-Image-Edit",
-        providerModel: "qwen/qwen-image-edit",
-    },
-    {
-        hfModel: "black-forest-labs/FLUX.1-Krea-dev",
-        providerModel: "black-forest-labs/flux-krea-dev",
+        hfModel: "stabilityai/stable-diffusion-xl-base-1.0",
+        providerModel: "stability-ai/sdxl:7762fd07cf82c948538e41f63f77d685e02b063e37e496e96eefd46c929f9bdc",
     },
     {
         hfModel: "tencent/HunyuanImage-2.1",
@@ -73,6 +73,10 @@ export const inferenceModels: InferenceModel[] = [
     {
         hfModel: "tencent/HunyuanImage-3.0",
         providerModel: "tencent/hunyuan-image-3",
+    },
+    {
+        hfModel: "zeke/rider-waite-tarot-flux",
+        providerModel: "tarot-cards/rider-waite:6d77a07ef88e8a09389385cb14d98b12629a4b23b0537b01dfeb833c32827546",
     },
 
     // Text-to-Video models
