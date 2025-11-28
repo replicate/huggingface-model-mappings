@@ -78,6 +78,10 @@ export const inferenceModels: InferenceModel[] = [
         hfModel: "zeke/rider-waite-tarot-flux",
         providerModel: "tarot-cards/rider-waite:6d77a07ef88e8a09389385cb14d98b12629a4b23b0537b01dfeb833c32827546",
     },
+    {
+        hfModel: "Tongyi-MAI/Z-Image-Turbo",
+        providerModel: "prunaai/z-image-turbo:7ea16386290ff5977c7812e66e462d7ec3954d8e007a8cd18ded3e7d41f5d7cf",
+    },
 
     // Text-to-Video models
     {
