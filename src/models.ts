@@ -139,6 +139,16 @@ export const inferenceModels: InferenceModel[] = [
         providerModel: "black-forest-labs/flux-kontext-dev",
         task: "image-to-image",
     },
+    {
+        hfModel: "black-forest-labs/FLUX.2-klein-4B",
+        providerModel: "black-forest-labs/flux-2-klein-4b",
+        task: "image-to-image"
+    },
+    {
+        hfModel: "black-forest-labs/FLUX.2-klein-base-4B",
+        providerModel: "black-forest-labs/flux-2-klein-4b-base",
+        task: "image-to-image"
+    },
 
     // Text-to-Speech models
     {
