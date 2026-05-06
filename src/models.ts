@@ -26,17 +26,6 @@ export const inferenceModels: InferenceModel[] = [
         hfModel: "briaai/FIBO",
         providerModel: "bria/fibo",
     },
-    // Removed 2026-05-06: these route through pinned/community Replicate models.
-    // HF's Replicate adapter cannot reliably serve those because pinned requests go
-    // through /v1/predictions and unpinned community models do not expose deployments.
-    // Re-enable only if they get official deployment endpoints or HF supports pinned routes.
-    //   - ByteDance/SDXL-Lightning -> bytedance/sdxl-lightning-4step
-    //   - ByteDance/Hyper-SD -> bytedance/hyper-flux-16step
-    //   - playgroundai/playground-v2.5-1024px-aesthetic -> playgroundai/playground-v2.5-1024px-aesthetic
-    {
-        hfModel: "HiDream-ai/HiDream-I1-Fast",
-        providerModel: "prunaai/hidream-l1-fast",
-    },
     {
         hfModel: "Qwen/Qwen-Image",
         providerModel: "qwen/qwen-image",
@@ -45,10 +34,6 @@ export const inferenceModels: InferenceModel[] = [
         hfModel: "Qwen/Qwen-Image-Edit",
         providerModel: "qwen/qwen-image-edit",
     },
-    // Not adding Qwen/Qwen-Image-Edit-2509 or Qwen/Qwen-Image-Edit-2511 yet:
-    // those Replicate schemas expect `image` as an array, while HF's current
-    // image-to-image adapter sends `image` as a string and `images` as an array.
-    // Re-test after the adapter can target array-valued image inputs.
     {
         hfModel: "stabilityai/stable-diffusion-3-medium",
         providerModel: "stability-ai/stable-diffusion-3",
@@ -65,19 +50,10 @@ export const inferenceModels: InferenceModel[] = [
         hfModel: "stabilityai/stable-diffusion-3.5-large-turbo",
         providerModel: "stability-ai/stable-diffusion-3.5-large-turbo",
     },
-    // Removed 2026-05-06: stability-ai/sdxl has the same pinned/community routing issue
-    // described above for the ByteDance and Playground mappings.
-    //   - stabilityai/stable-diffusion-xl-base-1.0 -> stability-ai/sdxl
     {
         hfModel: "tencent/HunyuanImage-2.1",
         providerModel: "tencent/hunyuan-image-2.1",
     },
-    {
-        hfModel: "tencent/HunyuanImage-3.0",
-        providerModel: "tencent/hunyuan-image-3",
-    },
-    // Removed 2026-05-06: community model with no unpinned deployment endpoint.
-    //   - zeke/rider-waite-tarot-flux -> tarot-cards/rider-waite
     {
         hfModel: "Tongyi-MAI/Z-Image-Turbo",
         providerModel: "prunaai/z-image-turbo",
@@ -92,10 +68,6 @@ export const inferenceModels: InferenceModel[] = [
     },
 
     // Text-to-Video models
-    // Removed 2026-05-06: Wan2.1 variants exceed Replicate's 60s sync wait limit,
-    // so HF receives incomplete predictions and reports malformed text-to-video output.
-    //   - Wan-AI/Wan2.1-T2V-14B -> wavespeedai/wan-2.1-t2v-480p
-    //   - Wan-AI/Wan2.1-T2V-1.3B -> wan-video/wan-2.1-1.3b
     {
         hfModel: "Wan-AI/Wan2.2-T2V-A14B",
         providerModel: "wan-video/wan-2.2-t2v-fast",
@@ -111,8 +83,6 @@ export const inferenceModels: InferenceModel[] = [
         providerModel: "wan-video/wan-2.2-t2v-fast",
         task: "text-to-video",
     },
-    // Removed 2026-05-06: Veo is gated on Replicate, so HF cannot create predictions.
-    //   - akhaliq/veo3.1-fast -> google/veo-3.1-fast
 
     // Image-to-Video models
     {
@@ -136,6 +106,11 @@ export const inferenceModels: InferenceModel[] = [
         task: "image-to-image"
     },
     {
+        hfModel: "black-forest-labs/FLUX.2-klein-9B",
+        providerModel: "black-forest-labs/flux-2-klein-9b",
+        task: "image-to-image"
+    },
+    {
         hfModel: "black-forest-labs/FLUX.2-klein-base-4B",
         providerModel: "black-forest-labs/flux-2-klein-4b-base",
         task: "image-to-image"
@@ -147,19 +122,18 @@ export const inferenceModels: InferenceModel[] = [
     },
 
     // Text-to-Speech models
-    // Removed 2026-05-06: Kokoro is a pinned community model with no HF-compatible
-    // deployment route. Chatterbox covers the high-impact TTS slot with a compatible schema.
-    //   - hexgrad/Kokoro-82M -> jaaari/kokoro-82m
     {
         hfModel: "ResembleAI/chatterbox",
         providerModel: "resemble-ai/chatterbox-turbo",
         task: "text-to-speech",
     },
+    {
+        hfModel: "ResembleAI/chatterbox-turbo",
+        providerModel: "resemble-ai/chatterbox-turbo",
+        task: "text-to-speech",
+    },
 
     // Automatic Speech Recognition models
-    // Removed 2026-05-06: cold pinned community ASR mapping; re-test with an audio
-    // fixture before re-enabling.
-    //   - microsoft/Phi-4-multimodal-instruct -> microsoft/phi-4-multimodal-instruct
     {
         hfModel: "openai/whisper-large-v3",
         providerModel: "openai/whisper:8099696689d249cf8b122d833c36ac3f75505c666a395ca40ef26f68e7d3d16e",
