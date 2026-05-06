@@ -26,17 +26,16 @@ export const inferenceModels: InferenceModel[] = [
         hfModel: "briaai/FIBO",
         providerModel: "bria/fibo",
     },
+    // Removed 2026-05-06: these route through pinned/community Replicate models.
+    // HF's Replicate adapter cannot reliably serve those because pinned requests go
+    // through /v1/predictions and unpinned community models do not expose deployments.
+    // Re-enable only if they get official deployment endpoints or HF supports pinned routes.
+    //   - ByteDance/SDXL-Lightning -> bytedance/sdxl-lightning-4step
+    //   - ByteDance/Hyper-SD -> bytedance/hyper-flux-16step
+    //   - playgroundai/playground-v2.5-1024px-aesthetic -> playgroundai/playground-v2.5-1024px-aesthetic
     {
-        hfModel: "ByteDance/SDXL-Lightning",
-        providerModel: "bytedance/sdxl-lightning-4step",
-    },
-    {
-        hfModel: "ByteDance/Hyper-SD",
-        providerModel: "bytedance/hyper-flux-16step",
-    },
-    {
-        hfModel: "playgroundai/playground-v2.5-1024px-aesthetic",
-        providerModel: "playgroundai/playground-v2.5-1024px-aesthetic:a45f82a1382bed5c7aeb861dac7c7d191b0fdf74d8d57c4a0e6ed7d4d0bf7d24",
+        hfModel: "HiDream-ai/HiDream-I1-Fast",
+        providerModel: "prunaai/hidream-l1-fast",
     },
     {
         hfModel: "Qwen/Qwen-Image",
@@ -46,6 +45,10 @@ export const inferenceModels: InferenceModel[] = [
         hfModel: "Qwen/Qwen-Image-Edit",
         providerModel: "qwen/qwen-image-edit",
     },
+    // Not adding Qwen/Qwen-Image-Edit-2509 or Qwen/Qwen-Image-Edit-2511 yet:
+    // those Replicate schemas expect `image` as an array, while HF's current
+    // image-to-image adapter sends `image` as a string and `images` as an array.
+    // Re-test after the adapter can target array-valued image inputs.
     {
         hfModel: "stabilityai/stable-diffusion-3-medium",
         providerModel: "stability-ai/stable-diffusion-3",
@@ -62,10 +65,9 @@ export const inferenceModels: InferenceModel[] = [
         hfModel: "stabilityai/stable-diffusion-3.5-large-turbo",
         providerModel: "stability-ai/stable-diffusion-3.5-large-turbo",
     },
-    {
-        hfModel: "stabilityai/stable-diffusion-xl-base-1.0",
-        providerModel: "stability-ai/sdxl:7762fd07cf82c948538e41f63f77d685e02b063e37e496e96eefd46c929f9bdc",
-    },
+    // Removed 2026-05-06: stability-ai/sdxl has the same pinned/community routing issue
+    // described above for the ByteDance and Playground mappings.
+    //   - stabilityai/stable-diffusion-xl-base-1.0 -> stability-ai/sdxl
     {
         hfModel: "tencent/HunyuanImage-2.1",
         providerModel: "tencent/hunyuan-image-2.1",
@@ -74,13 +76,11 @@ export const inferenceModels: InferenceModel[] = [
         hfModel: "tencent/HunyuanImage-3.0",
         providerModel: "tencent/hunyuan-image-3",
     },
-    {
-        hfModel: "zeke/rider-waite-tarot-flux",
-        providerModel: "tarot-cards/rider-waite:6d77a07ef88e8a09389385cb14d98b12629a4b23b0537b01dfeb833c32827546",
-    },
+    // Removed 2026-05-06: community model with no unpinned deployment endpoint.
+    //   - zeke/rider-waite-tarot-flux -> tarot-cards/rider-waite
     {
         hfModel: "Tongyi-MAI/Z-Image-Turbo",
-        providerModel: "prunaai/z-image-turbo:7ea16386290ff5977c7812e66e462d7ec3954d8e007a8cd18ded3e7d41f5d7cf",
+        providerModel: "prunaai/z-image-turbo",
     },
     {
         hfModel: "black-forest-labs/FLUX.2-dev",
@@ -92,16 +92,10 @@ export const inferenceModels: InferenceModel[] = [
     },
 
     // Text-to-Video models
-    {
-        hfModel: "Wan-AI/Wan2.1-T2V-14B",
-        providerModel: "wavespeedai/wan-2.1-t2v-480p",
-        task: "text-to-video",
-    },
-    {
-        hfModel: "Wan-AI/Wan2.1-T2V-1.3B",
-        providerModel: "wan-video/wan-2.1-1.3b",
-        task: "text-to-video",
-    },
+    // Removed 2026-05-06: Wan2.1 variants exceed Replicate's 60s sync wait limit,
+    // so HF receives incomplete predictions and reports malformed text-to-video output.
+    //   - Wan-AI/Wan2.1-T2V-14B -> wavespeedai/wan-2.1-t2v-480p
+    //   - Wan-AI/Wan2.1-T2V-1.3B -> wan-video/wan-2.1-1.3b
     {
         hfModel: "Wan-AI/Wan2.2-T2V-A14B",
         providerModel: "wan-video/wan-2.2-t2v-fast",
@@ -117,11 +111,8 @@ export const inferenceModels: InferenceModel[] = [
         providerModel: "wan-video/wan-2.2-t2v-fast",
         task: "text-to-video",
     },
-    {
-        hfModel: "akhaliq/veo3.1-fast",
-        providerModel: "google/veo-3.1-fast",
-        task: "text-to-video",
-    },
+    // Removed 2026-05-06: Veo is gated on Replicate, so HF cannot create predictions.
+    //   - akhaliq/veo3.1-fast -> google/veo-3.1-fast
 
     // Image-to-Video models
     {
@@ -149,20 +140,26 @@ export const inferenceModels: InferenceModel[] = [
         providerModel: "black-forest-labs/flux-2-klein-4b-base",
         task: "image-to-image"
     },
+    {
+        hfModel: "black-forest-labs/FLUX.2-klein-base-9B",
+        providerModel: "black-forest-labs/flux-2-klein-9b-base",
+        task: "image-to-image"
+    },
 
     // Text-to-Speech models
+    // Removed 2026-05-06: Kokoro is a pinned community model with no HF-compatible
+    // deployment route. Chatterbox covers the high-impact TTS slot with a compatible schema.
+    //   - hexgrad/Kokoro-82M -> jaaari/kokoro-82m
     {
-        hfModel: "hexgrad/Kokoro-82M",
-        providerModel: "jaaari/kokoro-82m:f559560eb822dc509045f3921a1921234918b91739db4bf3daab2169b71c7a13",
+        hfModel: "ResembleAI/chatterbox",
+        providerModel: "resemble-ai/chatterbox-turbo",
         task: "text-to-speech",
     },
 
     // Automatic Speech Recognition models
-    {
-        hfModel: "microsoft/Phi-4-multimodal-instruct",
-        providerModel: "microsoft/phi-4-multimodal-instruct:40c8f5c03ce250441855e776528bafd11cdb302c6677613acc0942c58dbd0afa",
-        task: "automatic-speech-recognition",
-    },
+    // Removed 2026-05-06: cold pinned community ASR mapping; re-test with an audio
+    // fixture before re-enabling.
+    //   - microsoft/Phi-4-multimodal-instruct -> microsoft/phi-4-multimodal-instruct
     {
         hfModel: "openai/whisper-large-v3",
         providerModel: "openai/whisper:8099696689d249cf8b122d833c36ac3f75505c666a395ca40ef26f68e7d3d16e",
