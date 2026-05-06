@@ -7,10 +7,11 @@
     "start": "tsx src/index.ts",
     "list-providers": "tsx script/list-providers.ts",
     "list-provider-mappings": "tsx script/list-provider-mappings.ts",
-    "delete-mapping": "tsx script/delete-mapping.ts"
+    "delete-mapping": "tsx script/delete-mapping.ts",
+    "healthcheck": "tsx script/healthcheck.ts"
   },
   "dependencies": {
-    "@huggingface/inference": "^2.6.4",
+    "@huggingface/inference": "^4.13.15",
     "typescript": "^5.4.2"
   },
   "devDependencies": {

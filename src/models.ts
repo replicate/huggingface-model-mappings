@@ -26,17 +26,17 @@ export const inferenceModels: InferenceModel[] = [
         hfModel: "briaai/FIBO",
         providerModel: "bria/fibo",
     },
+    // REMOVED 2026-05-06 — these Replicate models are version-pinned community models.
+    // HF's inference router rejects pinned `version:` requests ("Model not supported by provider replicate"),
+    // and Replicate returns 404 for unpinned `v1/models/<m>/predictions` because they have no deployment endpoint.
+    // Healthcheck (script/healthcheck.ts) proved no path can route HF inference to these models.
+    // Re-enable when these get a deployment endpoint on Replicate or when HF allows pinned predictions.
+    //   - ByteDance/SDXL-Lightning  → bytedance/sdxl-lightning-4step
+    //   - ByteDance/Hyper-SD        → bytedance/hyper-flux-16step
+    //   - playgroundai/playground-v2.5-1024px-aesthetic → playgroundai/playground-v2.5-1024px-aesthetic
     {
-        hfModel: "ByteDance/SDXL-Lightning",
-        providerModel: "bytedance/sdxl-lightning-4step",
-    },
-    {
-        hfModel: "ByteDance/Hyper-SD",
-        providerModel: "bytedance/hyper-flux-16step",
-    },
-    {
-        hfModel: "playgroundai/playground-v2.5-1024px-aesthetic",
-        providerModel: "playgroundai/playground-v2.5-1024px-aesthetic:a45f82a1382bed5c7aeb861dac7c7d191b0fdf74d8d57c4a0e6ed7d4d0bf7d24",
+        hfModel: "HiDream-ai/HiDream-I1-Fast",
+        providerModel: "prunaai/hidream-l1-fast",
     },
     {
         hfModel: "Qwen/Qwen-Image",
@@ -62,10 +62,9 @@ export const inferenceModels: InferenceModel[] = [
         hfModel: "stabilityai/stable-diffusion-3.5-large-turbo",
         providerModel: "stability-ai/stable-diffusion-3.5-large-turbo",
     },
-    {
-        hfModel: "stabilityai/stable-diffusion-xl-base-1.0",
-        providerModel: "stability-ai/sdxl:7762fd07cf82c948538e41f63f77d685e02b063e37e496e96eefd46c929f9bdc",
-    },
+    // REMOVED 2026-05-06 — see ByteDance block above. stability-ai/sdxl has no unpinned endpoint
+    // and pinned versions are rejected by the HF router.
+    //   - stabilityai/stable-diffusion-xl-base-1.0 → stability-ai/sdxl
     {
         hfModel: "tencent/HunyuanImage-2.1",
         providerModel: "tencent/hunyuan-image-2.1",
@@ -74,13 +73,11 @@ export const inferenceModels: InferenceModel[] = [
         hfModel: "tencent/HunyuanImage-3.0",
         providerModel: "tencent/hunyuan-image-3",
     },
-    {
-        hfModel: "zeke/rider-waite-tarot-flux",
-        providerModel: "tarot-cards/rider-waite:6d77a07ef88e8a09389385cb14d98b12629a4b23b0537b01dfeb833c32827546",
-    },
+    // REMOVED 2026-05-06 — see ByteDance block above (no unpinned endpoint).
+    //   - zeke/rider-waite-tarot-flux → tarot-cards/rider-waite
     {
         hfModel: "Tongyi-MAI/Z-Image-Turbo",
-        providerModel: "prunaai/z-image-turbo:7ea16386290ff5977c7812e66e462d7ec3954d8e007a8cd18ded3e7d41f5d7cf",
+        providerModel: "prunaai/z-image-turbo",
     },
     {
         hfModel: "black-forest-labs/FLUX.2-dev",
@@ -92,16 +89,11 @@ export const inferenceModels: InferenceModel[] = [
     },
 
     // Text-to-Video models
-    {
-        hfModel: "Wan-AI/Wan2.1-T2V-14B",
-        providerModel: "wavespeedai/wan-2.1-t2v-480p",
-        task: "text-to-video",
-    },
-    {
-        hfModel: "Wan-AI/Wan2.1-T2V-1.3B",
-        providerModel: "wan-video/wan-2.1-1.3b",
-        task: "text-to-video",
-    },
+    // REMOVED 2026-05-06 — Wan2.1 models exceed Replicate's 60s sync wait limit (1.3b takes ~108s).
+    // HF's adapter receives an incomplete prediction and throws "malformed response from text-to-video API".
+    // Re-enable when a faster Wan2.1 variant exists on Replicate.
+    //   - Wan-AI/Wan2.1-T2V-14B  → wavespeedai/wan-2.1-t2v-480p
+    //   - Wan-AI/Wan2.1-T2V-1.3B → wan-video/wan-2.1-1.3b
     {
         hfModel: "Wan-AI/Wan2.2-T2V-A14B",
         providerModel: "wan-video/wan-2.2-t2v-fast",
@@ -117,11 +109,8 @@ export const inferenceModels: InferenceModel[] = [
         providerModel: "wan-video/wan-2.2-t2v-fast",
         task: "text-to-video",
     },
-    {
-        hfModel: "akhaliq/veo3.1-fast",
-        providerModel: "google/veo-3.1-fast",
-        task: "text-to-video",
-    },
+    // Removed akhaliq/veo3.1-fast → google/veo-3.1-fast: HF inference proxy is denied POST access
+    // (Veo on Replicate is gated; HF cannot create predictions). Verified by healthcheck.
 
     // Image-to-Video models
     {
@@ -152,8 +141,8 @@ export const inferenceModels: InferenceModel[] = [
 
     // Text-to-Speech models
     {
-        hfModel: "hexgrad/Kokoro-82M",
-        providerModel: "jaaari/kokoro-82m:f559560eb822dc509045f3921a1921234918b91739db4bf3daab2169b71c7a13",
+        hfModel: "ResembleAI/chatterbox",
+        providerModel: "resemble-ai/chatterbox-turbo",
         task: "text-to-speech",
     },
 

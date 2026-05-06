@@ -107,6 +107,23 @@ npm run list-provider-mappings -- replicate
 
 This will output a JSON object containing all model mappings for the specified provider, organized by task type.
 
+### Healthcheck live mappings
+
+Sends a tiny test inference through Hugging Face's inference router for every live Replicate mapping
+and reports which ones succeed, time out, or fail. Useful before/after a sync to catch regressions.
+
+```bash
+HF_TOKEN=<your-huggingface-token> npm run healthcheck
+# Optional flags:
+#   --concurrency=4   how many models to test in parallel (default 4)
+#   --timeout=120     per-request timeout in seconds (default 90)
+#   --task=text-to-image  only test mappings of one task type
+```
+
+Image-to-image and automatic-speech-recognition mappings are skipped because they require binary input.
+For each failed mapping, consider unpinning the version, swapping to a faster Replicate alternative,
+or removing the mapping entirely (`npm run delete-mapping -- <mapping-id>`).
+
 ### Delete a Mapping
 
 To delete a specific model mapping:

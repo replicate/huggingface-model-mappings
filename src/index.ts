@@ -15,6 +15,7 @@ const supportedTasks = [
     'image-classification',
     'image-segmentation',
     'image-to-image',
+    // 'image-to-video', // not yet implemented in huggingface.js Replicate adapter (PR needed)
     'object-detection',
     'question-answering',
     'summarization',
