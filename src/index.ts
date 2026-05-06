@@ -15,6 +15,9 @@ const supportedTasks = [
     'image-classification',
     'image-segmentation',
     'image-to-image',
+    // Not implemented in the huggingface.js Replicate adapter yet.
+    // Re-enable after image-to-video support lands upstream.
+    // 'image-to-video',
     'object-detection',
     'question-answering',
     'summarization',
